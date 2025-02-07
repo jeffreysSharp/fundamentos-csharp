@@ -127,6 +127,69 @@ Basicamente é essa a estrutura de uma solução:
 <p>
  Um exemplo é quando você está desenvolvendo um ERP deve sere dividido em vários módulos, como por exemplo, módulo de cadastro, módulo financeito, módulo de compras, etc...<br />
 
- Então você cria uma solução com o nome da aplicação
+ Então você cria uma solução com o nome da aplicação.
 </p>
 
+<hr />
+
+### Preparando o ambiente
+
+1. Instalando o .NET SDK 
+<p>
+ Entre na página <a href="https://dot.net/">dot.net</a>, faça o download do SDK para seu Sistema Operacional. 
+</p>
+
+2. Conhecendo IDE's de desenvolvimento
+<p>
+Durante o ciclo de desenvolvimento de um Sofware você precisa de uma IDE 
+(Integrated Development Environment ou Ambiente de Desenvolvimento Integrado). 
+O objetivo principal da IDE é acelerar o desenvolvimento da sua aplicação, dado que nos fornece 
+ferramentas como Intelicense (Um recurso que ajuda a preencher o código) para ajudar no processo de desenvolvimento do código. 
+Você pode até utilizar o notepad para escrever seu código e compilar a sua aplicação em um prompt de comando,
+mas as IDE1s são muito mais produtivas. <br />
+Vamos conhecer três IDE's que são as mais utilizadas no mundo, quando falamos em desenvolvimento de Software.<br />
+</p>
+
+![](/.doc/img//6-principais-ides.JPG)
+
+##### Visual Studio Code
+<p>
+ O Visual Studio Code é uma das IDE's mais utilizadas no mundo, isso porque a Microsoft teve
+ como objetivo desenvolver essa IDE sendo multiplataforma, isso significa que você pode 
+ utilizar tanto no Windows, Linux e macOS. É uma IDE open source, isso significa que é de código aberto,
+ você pode ir até o github e fazer contribuições para o projeto, é multilinguagem e por isso você pode 
+ utilizar para desenvolver em diversas linguagens de programação.
+</p>
+
+#### Visual Studio
+<p>
+Temos o VIsual Studio que para mim é a melhor IDE para desenvolvimento para .NET, porém existe
+algumas limitações, por exemplo ele só pode ser instalado em Sistema Operacional Windows. Temos o
+Visual Studio Free, que é o Community Only, isso significa que você pode utilizart ele de forma
+Free, mas você nçao pode desenvolver Sistemas que são comerciais, aquele Sistema que você vai cobrar 
+por ele. E temos as versões Professional e Enterprise, que são as versões de fato pagas.
+</p>
+
+#### Jetbrains Rider
+<p>
+Temos também uma outra excelente IDE que é da Jetbrains Rider, é uma IDE que é multiplataforma,
+então você pode utilizar para desenvolver aplicações tanto no Windows, Linux e macOS, mas ela não é Free,
+ou seja, você precisa adquirir uma licença dessa IDE.
+</p>
+
+#### Vamos utilizar o Vuisual Studio Code
+
+<p>
+ Após a instalação do Visual Studio code precisaremos:
+</p>
+
+ ##### Instalar uma extensão
+
+ <p>
+  Dado cenário que vamos trabalhar com a linguagem C#, utilizando essa IDE. Com o Visual Studio Code é 
+  possível desenvolver em diversas linguagens de programação, mas para isso é necessário instalar 
+  alguma extenção.<br />
+  Iremos instalar a extenção C# oficial da Microsoft.
+ </p>
+
+![](/.doc/img/7-extencao-csharp-vscode.JPG)
