@@ -58,16 +58,28 @@ ComprarLeite()
  *CLR* Common Language Runtime é a base principal do .NET, sendo o responsável por executar sua aplicação e se comunicar com o Hardeware. <br/>
  Vamos entender como funciona o processo de compilação:
 </p>
-![](/.doc/img/3-processo-compilacao.JPG)
-<p>
 
 <p>Esse é um assunto bastante avançado, mas é de extrema importância abordar esse assunto, para que você possa compreender de fato como funciona a sua aplicação através do *.NET*, desde a compilação do código até a execução da sua aplicação <br/> 
 
+Durante a nossa evolução como desenvolvedor, iremos desenvolver habilidades para fazer um bom uso de harware quando estamos escrevendo nossos códigos, ou seja, conforme vamos desenvolvendo nossas habilidades vamos entendendo como podemos contruir códigos melhores para fazer um bom uso do harware e utilizar por exemplo menos recursos da *CPU* e menos memória, com isso teremos uma aplicação muito mais performática. <br />
+
+O *CLR* já é capaz de fazer um bom gerenciamento de memória de forma bem eficiente, você irá aprender mais adiante o que são variáveis e objetos. <br />
+
+Para fazer uma pequena observação para você entender um pouco melhor sobre o que eu falei de gerenciamento de memória, imagine um cenário, onde você tem um cadastro de pessoas e você precisa, por exemplo carregar um determinado registro para exibir para o usuário final, então o *CLR* possui um conjunto de recursos, que um deles é o *GC* Garbage Collector (Coletor de lixo) que faz o seguinte, quando ele entende que essa informação que você carregou para a memória não está mais sendo utilizada, automaticamente ele vai na memória e remove essa informação, liberando mais espaço na memória, então isso significa que em partes ele assume a responsabilidade de otimizar os recursos que estão sendo utilizados na máquina, basicamente de forma bem simples, esse é um dos recursos que o *CLR* nos oferece.<br />
+
+Agora vamos entender de fato como funciona o processo de compilação e execução. <br />
+Então vamos analizar a seguinte imagem: <br />
+</p>
+ 
+ ![](/.doc/img/3-processo-compilacao.JPG)
+<p>
  O primeiro passo é escrever a aplicação utilizando a linguagem de preferência. </br>
  O compilador gera um assembly do tipo .exe ou uma .dll, isso vai depender da configuração do tipo de projeto que você criou, isso você vai aprender mais a frente.<br />
- Esse arquivo vai passar por um outro processo, quando esse compilador pega o código ele transforma em uma oulinguagem *IL* (Linguagem Intermediária) essa linguagem intermediária foi criada para que o .NET fornecesse a capacidade de desenvolvermos em outras linguagens e que o core, o motor pricipal fosse capaz de ler apenas uma linguagem que é o *IL* então o compilador do *C#* vai gerar o código executável ou uma .dll, que contenha essas intruções em código *IL*, então ele transforma
-</p> o código do *C#* para essa *IL*, e o que acontece é que em tempo de execução, ou seja, a hora que você vai executar a sua aplicação o .NET vai utilizar os recursos do *CLR*, é onde o *CLR* entra em ação de fato.<br />
- Um dos recursos do CLR, alé do *GC* (Garbage Collector) é o RyuJIT, um outro compilador em tempo de execução, então aconte que o compilador vai pegar esse código *IL* e transformar em um código nativo da máquina que você está utilizando e aí sim vai executar a sua aplicação, então vai transformar para um código de máquina de fato, que é onde a sua aplicação será executada.
+ Esse arquivo vai passar por um outro processo, quando esse compilador pega o código ele transforma em uma oulinguagem *IL* (Linguagem Intermediária) essa linguagem intermediária foi criada para que o .NET fornecesse a capacidade de desenvolvermos em outras linguagens e que o core, o motor pricipal fosse capaz de ler apenas uma linguagem que é o *IL* então o compilador do *C#* vai gerar o código executável ou uma .dll, que contenha essas intruções em código *IL*, então ele transforma o código do *C#* para essa *IL*, e o que acontece é que em tempo de execução, ou seja, a hora que você vai executar a sua aplicação o .NET vai utilizar os recursos do *CLR*, é onde o *CLR* entra em ação de fato.<br />
+
+ Um dos recursos do CLR, além do *GC* (Garbage Collector) é o RyuJIT, um outro compilador em tempo de execução, então aconte que o compilador vai pegar esse código *IL* e transformar em um código nativo da máquina que você está utilizando e aí sim vai executar a sua aplicação, então vai transformar para um código de máquina de fato, que é onde a sua aplicação será executada.
+ </p>
+
 5. O que é um projeto?
 6. O que é uma solução?
 
