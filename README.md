@@ -183,7 +183,12 @@ ou seja, você precisa adquirir uma licença dessa IDE.
 </p>
 
  1. Instalar extensões
+
  <p>
-  Dado cenário que vamos trabalhar com desenvolvimento C#
+  Dado cenário que vamos trabalhar com a linguagem C#, utilizando essa IDE. Com o Visual Studio Code é 
+  possível desenvolver em diversas linguagens de programação, mas para isso é necessário instalar 
+  alguma extenção.<br />
+  Iremos instalar a extenção C# oficial da Microsoft.
  </p>
 
+![](/.doc/img/7-extencao-csharp-vscode.JPG)
