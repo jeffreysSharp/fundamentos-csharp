@@ -81,6 +81,25 @@ Então vamos analizar a seguinte imagem: <br />
  </p>
 
 5. O que é um projeto?
+<p>
+Durante este curso nós iremos criar um projeto na prática. <br /> 
+Esse módulo tem como objetivo fazermos um pequeno overview do que é um projeto, quando estamos criando nossas aplicações em *.NET*.<br />
+
+Um projeto é uma forma de você organizar todo código fonte da sua aplicação, seja por arquivos
+ou até mesmo por pastas, no projeto é onde fica todos os arquivos que serão compilados, além disso você pode adicionar informações sobre sua aplicação, como por exemplo o nome de sua aplicação, versão da sua aplicação, porque cada alteração que você fizer no seu código fonte e compilar sua aplicação novamente voê pode querer gerar uma nova versão da sua aplicação e é exatamente no projeto que você informa a versão da sua aplicação, você pode também informar a versão do *.NET*, como a Microsoft tem evoluído bastante o *.NET* e tem lançado várias versões, é no projeto que você vai setar, informar qual é a versão do *.NET* que você irá utilizar no projeto. <br />
+
+Basicamente é essa a estrutura de um projeto:
+</p>
+
+![](/.doc/img//4-estrutura-projeto.JPG)
+
+<p>
+ Sendo assim, quando for compilar a nossa aplicação o compilador <a href="https://github.com/dotnet/roslyn">roslyn</a> irá analizar a estrutura do projeto e vai compilar a aplicação usando as configurações adicionas no arquivo do projeto<br />
+ De forma resumida é isso, o projeto é utilizado para organizar a estrutura do código fonte da aplicação e configurar informações que são relevantes para a aplicação, mais a frete criaremos uma projeto totalmente do zero e você irá compreender melhor a estrutura de um projeto. <br />
+
+ A imagem acima demonstra a estrutura de um projeto complexo que criei.
+</p>
+
 6. O que é uma solução?
 
 
