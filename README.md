@@ -193,3 +193,22 @@ ou seja, você precisa adquirir uma licença dessa IDE.
  </p>
 
 ![](/.doc/img/7-extencao-csharp-vscode.JPG)
+
+### Hands-On-Code
+<p>
+ Este módulo tem como objetivo criar uma solução via CLI 
+ e você também irá aprender: 
+</p>
+
+#### Criando uma solução via CLI
+#### Criando um projeto via CLI
+#### Executando o primeiro projeto
+#### O que são namespaces?
+#### Tipos de dados do C#
+#### O que é uma variável
+#### O Que é uma constante
+#### Comentários
+#### Operadores aritiméticos
+#### Operadores relacionais
+#### Operadores lógicos
+#### Operador ternário
