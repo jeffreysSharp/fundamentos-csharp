@@ -74,7 +74,7 @@ Então vamos analizar a seguinte imagem: <br />
  ![](/.doc/img/3-processo-compilacao.JPG)
 <p>
  O primeiro passo é escrever a aplicação utilizando a linguagem de preferência. </br>
- O compilador gera um assembly do tipo .exe ou uma .dll, isso vai depender da configuração do tipo de projeto que você criou, isso você vai aprender mais a frente.<br />
+ Quando queremos executar esse código, precisamos compilar a nossa aplicação compilador gera um assembly do tipo .exe ou uma .dll, isso vai depender da configuração do tipo de projeto que você criou, isso você vai aprender mais a frente.<br />
  Esse arquivo vai passar por um outro processo, quando esse compilador pega o código ele transforma em uma oulinguagem *IL* (Linguagem Intermediária) essa linguagem intermediária foi criada para que o .NET fornecesse a capacidade de desenvolvermos em outras linguagens e que o core, o motor pricipal fosse capaz de ler apenas uma linguagem que é o *IL* então o compilador do *C#* vai gerar o código executável ou uma .dll, que contenha essas intruções em código *IL*, então ele transforma o código do *C#* para essa *IL*, e o que acontece é que em tempo de execução, ou seja, a hora que você vai executar a sua aplicação o .NET vai utilizar os recursos do *CLR*, é onde o *CLR* entra em ação de fato.<br />
 
  Um dos recursos do CLR, além do *GC* (Garbage Collector) é o RyuJIT, um outro compilador em tempo de execução, então aconte que o compilador vai pegar esse código *IL* e transformar em um código nativo da máquina que você está utilizando e aí sim vai executar a sua aplicação, então vai transformar para um código de máquina de fato, que é onde a sua aplicação será executada.
@@ -82,5 +82,6 @@ Então vamos analizar a seguinte imagem: <br />
 
 5. O que é um projeto?
 6. O que é uma solução?
+
 
 
