@@ -178,11 +178,12 @@ ou seja, você precisa adquirir uma licença dessa IDE.
 </p>
 
 #### Vamos utilizar o Vuisual Studio Code
+
 <p>
-  Após a instalação do Visual Studio Code iremos fazer algumas configurações.
+ Após a instalação do Visual Studio code precisaremos:
 </p>
 
- 1. Instalar extensões
+ ##### Instalar uma extensão
 
  <p>
   Dado cenário que vamos trabalhar com a linguagem C#, utilizando essa IDE. Com o Visual Studio Code é 
