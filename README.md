@@ -23,6 +23,7 @@ ComprarLeite()
 ```
 
 2. O que é linguagem de programação
+<p>è uma forma de escrever instruções que o computador possa interpretar e executar todo o conjunto de intruções que escrevemos, é chamado de código fonte e esse código pode ser compilado ou interpretado</p>
 3. O que é o .NET
 4. O que é CLR
 5. O que é um projeto
