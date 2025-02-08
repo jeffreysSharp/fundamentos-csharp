@@ -1,0 +1,15 @@
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\bin\Debug\net9.0\ProjetoAulas.exe
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\bin\Debug\net9.0\ProjetoAulas.deps.json
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\bin\Debug\net9.0\ProjetoAulas.runtimeconfig.json
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\bin\Debug\net9.0\ProjetoAulas.dll
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\bin\Debug\net9.0\ProjetoAulas.pdb
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\obj\Debug\net9.0\ProjetoAulas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\obj\Debug\net9.0\ProjetoAulas.AssemblyInfoInputs.cache
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\obj\Debug\net9.0\ProjetoAulas.AssemblyInfo.cs
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\obj\Debug\net9.0\ProjetoAulas.csproj.CoreCompileInputs.cache
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\obj\Debug\net9.0\ProjetoAulas.sourcelink.json
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\obj\Debug\net9.0\ProjetoAulas.dll
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\obj\Debug\net9.0\refint\ProjetoAulas.dll
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\obj\Debug\net9.0\ProjetoAulas.pdb
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\obj\Debug\net9.0\ProjetoAulas.genruntimeconfig.cache
+C:\Projects\study\fundamentos-csharp\src\ProjetoAulas\obj\Debug\net9.0\ref\ProjetoAulas.dll

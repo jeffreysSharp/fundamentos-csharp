@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B8FA5AE9-492C-4685-BC38-B5D2584DE307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoAulas", "src\ProjetoAulas\ProjetoAulas.csproj", "{9F73305A-8892-43AE-A53B-5D3029958D2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F73305A-8892-43AE-A53B-5D3029958D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F73305A-8892-43AE-A53B-5D3029958D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F73305A-8892-43AE-A53B-5D3029958D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F73305A-8892-43AE-A53B-5D3029958D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F73305A-8892-43AE-A53B-5D3029958D2C} = {B8FA5AE9-492C-4685-BC38-B5D2584DE307}
+	EndGlobalSection
+EndGlobal
