@@ -114,20 +114,20 @@ Basicamente é essa a estrutura de um projeto:
  Sendo assim, quando for compilar a nossa aplicação o compilador <a href="https://github.com/dotnet/roslyn">roslyn</a> irá analizar a estrutura do projeto e vai compilar a aplicação usando as configurações adicionas no arquivo do projeto. De forma resumida é isso, o projeto é utilizado para organizar a estrutura do código fonte da aplicação e configurar informações que são relevantes para a aplicação, mais a frete criaremos uma projeto totalmente do zero e você irá compreender melhor a estrutura de um projeto.
 </p>
 
-#### O que é uma solução?
+#### O que é uma Solition?
 <p>
 Apesar de o nome ser um pouco confuso (Solution ou Solução) não está relacionado a resolução de algum tipo de problema. Quando estamos desenvolvendo uma aplicação em .NET precisamos criar projetos para organizar o código fonte, conforme falado  no módulo anterior. <br/>
 
-Uma solução é uma forma de agrupar diversos projetos, e no momento de compilar a aplicação ao invés de você compilar projeto por projeto você compila a solução e os binários de cada projeto serão gerados individualmente de uma única vez.<br/>
-Basicamente é essa a estrutura de uma solução:
+Uma Solution é uma forma de agrupar diversos projetos, e no momento de compilar a aplicação ao invés de você compilar projeto por projeto você compila a Solution e os binários de cada projeto serão gerados individualmente de uma única vez.<br/>
+Basicamente é essa a estrutura de uma Solution:
 </p>
 
 ![](.doc/img/5-estrutura-solucao.JPG)
 
 <p>
- Um exemplo é quando você está desenvolvendo um ERP deve sere dividido em vários módulos, como por exemplo, módulo de cadastro, módulo financeito, módulo de compras, etc...<br />
+ Um exemplo é quando você está desenvolvendo um ERP deve sere dividido em vários módulos, como por exemplo um módulo de cadastro, módulo financeito, módulo de compras, etc...<br />
 
- Então você cria uma solução com o nome da aplicação.
+ Então você cria uma Solution com o nome da aplicação.
 </p>
 
 <hr />
@@ -196,13 +196,44 @@ ou seja, você precisa adquirir uma licença dessa IDE.
 
 ### Hands-On-Code
 <p>
- Este módulo tem como objetivo criar uma solução via CLI 
- e você também irá aprender: 
+ Este módulo tem como objetivo:
 </p>
 
-#### Criando uma solução via CLI
-#### Criando um projeto via CLI
-#### Executando o primeiro projeto
+#### Criar uma Solution via CLI
+
+<p>
+ Para criar a nossa primeira Solution utilizando o .NET, o qual já foi apresentado em módulos primeiro você precisa escolher um diretório onde você quer criar esses arquivos.<br />
+ Exemplo: C:\Projects<br />
+
+ O .NET possui vários templates que podemos utilizar para criar uma Solution ou até mesmo um projeto ou bibliotecas. <br />
+
+Abra um prompt de comando e navegue até o diretório criado.<br />
+Digite o seguinte comando:
+</p>
+
+```bash
+ C:\Projects>dotnet new list
+```
+<p>
+Para exibir todos os templates disponíveis do .NET que podemos utilizar, conforme a imagem abaixo.
+</p>
+
+![](/.doc/img//8-templates-disponiveis.JPG)
+
+<p>
+ O template que iremos utilizar é o Solution File, para isso digite:
+</p>
+
+```bash
+ C:\Projects>dotnet new sln -n Curso
+```
+<p>
+ Que é do template de Solution, o argumento -n é para informar o nome do projeto ou da    Solution, iremos nomear de Curso. <br/>
+ Ao pressionar enter o .NET irá utilizar esse template de Solution e vai criar um arquivo de Solution. <br> 
+</p>
+
+#### Criar um projeto via CLI
+#### Executar o primeiro projeto
 #### O que são namespaces?
 #### Tipos de dados do C#
 #### O que é uma variável
