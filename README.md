@@ -228,11 +228,26 @@ Para exibir todos os templates disponíveis do .NET que podemos utilizar, confor
  C:\Projects>dotnet new sln -n Curso
 ```
 <p>
- Que é do template de Solution, o argumento -n é para informar o nome do projeto ou da    Solution, iremos nomear de Curso. <br/>
+ Que é do template de **Solution File**, o argumento -n é para informar o nome do projeto ou da Solution, iremos nomear de Curso. <br/>
  Ao pressionar enter o .NET irá utilizar esse template de Solution e vai criar um arquivo de Solution. <br> 
+ Navegue até o diretório selecionado e vai ver o arquivo **Curso.sln** criado.
 </p>
 
 #### Criar um projeto via CLI
+<p>
+Agora vamos criar um projeto que iremos utilizar para os próximos módulos.<br />
+Para isso digite o comando:
+</p>
+
+```bash
+ C:\Projects>dotnet new console -n ProjetoAulas -f net9.0
+```
+<p>
+ E pressione Enter para criar esse projeto. o argumento -f é para informar qual a versão do .NET que iremos utilizar nesse projeto, nesse caso vamos utilizar o .NET 9.<br />
+ Navegue até o diretório selecionado e vai ver o arquivo **ProjetoAulas.csproj** e o arquivo principal **Program.cs** criado.
+</p>
+
+
 #### Executar o primeiro projeto
 #### O que são namespaces?
 #### Tipos de dados do C#
