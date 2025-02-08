@@ -352,6 +352,28 @@ Assim não é preciso informar qual é o projeto porque automaticamente o .NET v
 <p>
 
 #### O que são namespaces?
+<p>
+ Um namespace em C# é um conjunto de objeto organizados que são agrupados e organizados em um escopo. A palavra-chave namespoace é usada para declarar um namespace.
+</p>
+
+##### Os namespaces são úteis para: 
+
+- Organizar grandes quantidades de código;
+- Evitar conflitos de nomes;
+- Criar tipos globalmente exclusivos;
+- Controlar o escopo de nomes de classes e de métodos;
+- Evitar problemas futuros quando se quer reutilizar códigos.
+
+<p>
+ Para simplificar o uso dos namespaces, 
+</p>
+
+<p>
+Para declarar um namespace em C#, é necessário usar a palavra chave namespace e um nome de identificador válido.<br />
+
+Para simplificar o uso dos namespaces, é possível utilizar a diretiva using. A diretiva using elimina a necessidade de especificar o nome do namespace para cada classe.
+</p>
+
 #### Tipos de dados do C#
 #### O que é uma variável
 #### O Que é uma constante
