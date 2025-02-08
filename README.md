@@ -203,7 +203,7 @@ ou seja, você precisa adquirir uma licença dessa IDE.
 
 <p>
  Para criar a nossa primeira Solution utilizando o .NET, o qual já foi apresentado em módulos primeiro você precisa escolher um diretório onde você quer criar esses arquivos.<br />
- Exemplo: C:\Projects<br />
+ Exemplo: C:\Projects\Curso<br />
 
  O .NET possui vários templates que podemos utilizar para criar uma Solution ou até mesmo um projeto ou bibliotecas. <br />
 
@@ -212,7 +212,7 @@ Digite o seguinte comando:
 </p>
 
 ```bash
- C:\Projects>dotnet new list
+ C:\Projects\Curso>dotnet new list
 ```
 <p>
 Para exibir todos os templates disponíveis do .NET que podemos utilizar, conforme a imagem abaixo.
@@ -225,12 +225,12 @@ Para exibir todos os templates disponíveis do .NET que podemos utilizar, confor
 </p>
 
 ```bash
- C:\Projects>dotnet new sln -n Curso
+ C:\Projects\Curso>dotnet new sln -n Curso
 ```
 <p>
  Que é do template de **Solution File**, o argumento -n é para informar o nome do projeto ou da Solution, iremos nomear de Curso. <br/>
  Ao pressionar enter o .NET irá utilizar esse template de Solution e vai criar um arquivo de Solution. <br> 
- Navegue até o diretório selecionado e vai ver o arquivo **Curso.sln** criado.
+ Navegue até o diretório selecionado e vai ver o arquivo Curso.sln criado.
 </p>
 
 #### Criar um projeto via CLI
@@ -240,15 +240,117 @@ Para isso digite o comando:
 </p>
 
 ```bash
- C:\Projects>dotnet new console -n ProjetoAulas -f net9.0
+ C:\Projects\Curso>dotnet new console -n ProjetoAulas -f net9.0
 ```
 <p>
  E pressione Enter para criar esse projeto. o argumento -f é para informar qual a versão do .NET que iremos utilizar nesse projeto, nesse caso vamos utilizar o .NET 9.<br />
- Navegue até o diretório selecionado e vai ver o arquivo **ProjetoAulas.csproj** e o arquivo principal **Program.cs** criado.
+ Navegue até o diretório selecionado e vai ver o arquivo ProjetoAulas.csproj e o arquivo principal Program.cs criado.
 </p>
 
-
 #### Executar o primeiro projeto
+<p>
+ Esse módulo tem como objetivo executar a nossa primeira aplicação em .NET, nos módulos anteriores criamos a Solution Curso.sln e também criamos uma Projeto chamado ProjetoAulas.csproj.<br/>
+
+ Em módulos anteriores explicamos o que uma Solution e sua principal funcionalidade, que é de organizar projetos que desenvolvemos em .NET. Como já criamos uma Solution e um projeto, o que precisamos fazer agora é adicionar o nosso Projeto na Solution.<br />
+
+ Antes de adicionar o projeto na Solution vamos ao Prompt de comando e vamos analizar a estrutura do arquivo Curso.sln, que é a nossa Solution<br/>
+
+ Digite no prompt de comando:
+</p>
+
+```bash
+ C:\Projects\Curso>type Curso.sln
+```
+<p>
+Basicamente essa é a a estrutura do arquivo da Solution Curso.sln
+</p>
+
+![](/.doc/img/9-estrutura-sln.JPG)
+
+<p>
+Então basicamente dentro desse arquivo, possui alguns código, que não precisamos editar manualmente, sempre iremos manipular esse arquivo dentro de uma IDE ou através do console utilizando o .NET. Esse arquivo não tem nenhuma informação de extrema importância até o momneto
+dentro desse arquivo de Solution. Então agora vamos adicionar nosso projeto na Solution digitando o seguinte comando:
+</p>   
+
+```bash
+ C:\Projects\Curso>dotnet sln Curso.sln add ProjetoAulas
+```
+<p>
+ Agora o projeto foi adicionado na Solution, seu eu digitar novamente o comando:
+</p>
+
+```bash
+ C:\Projects\Curso>type Curso.sln
+```
+<p>
+ Agora foi adicionado algumas informações importantes dentro desse arquivo, a informação mais importante de se destacar é o ProjetoAulas que foi adicionado no arquivo Solution.
+</p>
+
+![](/.doc/img/9-estrutura-sln-projeto.JPG)
+
+<p>
+ Temos aqui o nome do projeto e temos o diretório do projeto onde se encontra o projeto dentro da Solution, então vamos entender a principal funcionalidade da Solution, que é organizar os projetos que estamos desenvolvendo a aplicação. Conforme vamos criando projetos e adicionando na Solution ele vai alterando o arquivo criando blocos de informações de cada projeto. <br/>
+
+ Vamos conhecer agora alguns comando de extrema importancia que vamos utilizar durante o processo de nossa aplicação. <br />
+
+ Para compilar o projeto temos duas opçoes, podemos compilar na raiz da minha Solution digitando um comando para compilar toda a Solution, como também eu posso digitar um comando 
+ especifico para o projeto que eu quero compilar.   
+</p>
+
+```bash
+ C:\Projects\Curso>dotnet build
+```
+<p>
+Ao digitar esse comando ele vai analisar todos arquivos do projeto que estão dentro do arquivo
+Solution e vai compilar e gerar os binários que contém a linguagem IL que já foi explicado em módulos anteriores que é a Linguagem Intermediária (IL) para que o runtime possa executar a nossa aplicação de fato. Então, ao digitar o comando dotnet build ele vai compilar o projeto.<br/>
+
+Se você for até o diretório vai encontrar algumas pastas, uma pasta chamada obj que armazena objetos temporários em tempo de desenvolvimento, então enquanto você está desenvolvendo a sua aplicação alguns arquivos podem estar sendo gerados dentro dessa pasta obj. <br />
+
+A pasta bin/debug/net9.0 que é a versão do framework que escolhemos é onde fica os arquivos 
+da compilação do nosso projeto, quando executamos o comando dotnet build ele gera os binários, que nesses binários contém a Linguagem Intermediária (IL), que já falamos em módulos anteriores e é através desses arquivos que executamos a aplicação, esses arquivos são a nossa aplicação final. <br/>     
+
+Um outro comando que vamos analisar é o comando clean. Observe o seguinte compilamos o projeto, ele gerou os binários na pasta debug e na pasta obj.<br/>
+
+Se digitar o comando:
+</p>
+
+```bash
+ C:\Projects\Curso>dotnet clean
+```
+
+<p>
+ O comando irá limpar todos os arquivos que foram gerados em tempo de compilação.<br />
+ Para executar o projeto digite o comando:    
+</p>
+
+```bash
+ C:\Projects\Curso>dotnet run
+```
+<p>
+O console vai informar que não foi possivel encontrar um projeto para executar, para executar  uma aplicação precisamos passar para o .NET qual é a aplicação que queremos executar, ela não vai ser executada automaticamente por estar na pasta da minha Solution. Nossa Solution é utilizada como uma forma apenas de organizar os projetos, mas para executar os projetos precisamos passar para o .NET qual é o projeto que queremos executar. <br/>
+
+É preciso executar o comando:
+</p>
+
+```bash
+ C:\Projects\Curso>dotnet run --project ProjetoAulas 
+```
+<p>
+ É necessário informar o diretório do projeto para executar.<br /> 
+ Essa é a primeira forma de executar o projeto na raiz da Solution informando o argumento --project e informar o diretório do projeto. <br/>   
+</p>
+
+<p>
+A segunda opção para executar o projeto é navegar até o diretório onde está o projeto e executar o comando:    
+</p>
+
+```bash
+ C:\Projects\Curso\ProjetoAulas>dotnet run
+```
+<p>
+Assim não é preciso informar qual é o projeto porque automaticamente o .NET vai fazer o discover daquele diretório e vai encontrar o arquivo com a extensão .csproj e vai executar o projeto.     
+<p>
+
 #### O que são namespaces?
 #### Tipos de dados do C#
 #### O que é uma variável
