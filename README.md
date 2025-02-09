@@ -375,6 +375,85 @@ Para simplificar o uso dos namespaces, é possível utilizar a diretiva using. A
 </p>
 
 #### Tipos de dados do C#
+
+![](/.doc/img//10-tipos-dados.JPG)
+
+<p>
+Esse móduulo tem como objetivo conhecer o principais tipos de dados do C# que utilizamos para desenvolver aplicações, esses tipos de dados são fundameitais para o desenvolvimento de aplicações, o qual podemos escolher o tipo de dado especifico para armazenar cada tipo de informação. <br/>
+
+Vamos pegar como exemplo um cadastro de pessoas, então no momento que vamos cadastrar uma pessoa precisaremos capturar o nome da pessoa,
+então vamos armazenar o nome da pessoa em um tipo de dado específico e para armazenar a idade da pessoa é necessário armazenar esse dado em 
+outro tipo de dado. E esses tipos de dados  que iremos conhecer agora.
+</p> 
+
+##### Numéricos
+<p>
+  Os tipos de dados numéricos são números inteiros, decimais e números de ponto flutuante. 
+</p>
+
+###### Inteiros
+
+![](/.doc/img/11-tipo-dados-inteiros.JPG)
+
+<p>
+  O principais tipos de dados para trabalhar com números, com valores inteiros, que não são fracionados, são o byte, hort, int e long.
+</p>
+
+- **byte** É possível armazenar valor de 0 até 255;
+- **short** É possível armazenar valor negativo de -32768 até 32767 positivo;
+- **int**  É possível armazenar valor negativo de -2.147.483.648 negativo até  2.147.483.647 pósitivo;
+- **long** É possível armazenar valor -9.223.372.036.854.775.808 negativo até 9.223.372.036.854.775.807 positivo.
+
+###### Pontos flutuantes
+
+![](/.doc/img/12-tipo-dados-pontos-flutuantes.JPG)
+
+<p>
+ Temos também outros tipos de dados para armazenar valores fracionados, quee são chamados de pontos flutuantes, são float, double e decimal.
+</p>
+
+- **float** É possível armazenar até 9 dígitos em casas decimais; 
+- **double** É possível armazenar até 17 dígitos em casas decimais; 
+- **decimal** É possível armazenar até 29 dígitos, com uma precisão maior para fazer armazenamento em cálculos matemáticos
+
+#### Booleano
+![](/.doc/img/13-topo-dados-booleano.JPG)
+
+<p>
+  O tipo booleano é um tipo de dado que pode armazenar os valores verdadeiro ou falso, representados pelos literais true ou false.
+</p>
+
+### Caracteres
+![](/.doc/img/14-tipo-dados-caracteres.JPG)
+
+<p>
+  Temos dois tipos de dados para trabalhar com caracteres, são char e stgring
+</p>
+
+- **char** Aceita apenas 1 (um) caractere (Letra, Unicode ou Hexadecimal), para utilizar o envolvemos em aspas simples informando qual o caractere está sendo utilizado **'A'**, ele suporta também e já faz a conversão automática se você informar um caractere no formato unicode ou
+exadecimal, ecplicarei mais a frente nos próximos módulos.
+- **string** É o tipo mais utilizado no processo de desenvolvimento de aplicações, esse tipo tem como proposta fornecer a capacidade de armazenar dados como uma cadeia de caracteres, por exemplo armazenar o nome da pessoa. 
+
+#### Outros tipos
+![](/.doc/img/15-tipo-dados-outros.JPG)
+
+<p>
+ Temos outros tipo de dados muito utilizados para desenvolvimento de aplicações.
+</p>
+
+- **class** 
+- **interface**
+- **struct**
+- **object**
+- **dynamic**
+
+<p>
+ Não vamos aprofundar nesse módulo aqui esses tipos que foram apresentados agora, porque teremos um módulo específico durante esse curso que
+ iremos conhecer todos esses tipo aqui apresentados, bom fizemos um pequeno overview sobre esses tipos de dados para que você possa ter uma noção e saiba qual é o tipo de dado específico que você pode utilizar durante o processo de desenvolvimento de aplicações.          
+
+</p>
+
+
 #### O que é uma variável
 #### O Que é uma constante
 #### Comentários
