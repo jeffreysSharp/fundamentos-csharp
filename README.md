@@ -375,6 +375,17 @@ Para simplificar o uso dos namespaces, é possível utilizar a diretiva using. A
 </p>
 
 #### Tipos de dados do C#
+
+![](/.doc/img//10-tipos-dados.JPG)
+
+<p>
+Esse móduulo tem como objetivo conhecer o principais tipos de dados do C# que utilizamos para desenvolver aplicações, esses tipos de dados são fundameitais para o desenvolvimento de aplicações, o quel podemos escolher o tipo de dados especifico para armazenar cada tipo de informação. <br/>
+
+Vamos pegar como exemplo um cadastro de pessoas, então no momento que vamos cadastrar uma pessoa precisaremos capturar o nome da pessoa,
+então vamos armazenar o nome da pessoa em um tipo de dado específico e para armazenar a idade da pessoa é necessário armazenar esse dado em 
+outro tipo de dado para armazenar. E esses tipos de dados  que iremos conhecer agora.
+</p> 
+
 #### O que é uma variável
 #### O Que é uma constante
 #### Comentários
