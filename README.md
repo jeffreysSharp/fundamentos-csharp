@@ -1,15 +1,18 @@
-# Fundamentos C#
+# Fundamentos do C#
 [![Prject Skills](https://skillicons.dev/icons?i=dotnet,cs)](https://skillicons.dev)
 
-## Aprenda desde os conceitos fundamentais até o desenvolvimento completo de uma aplicação em C#.
+## Aprenda desde os conceitos fundamentais até o desenvolvimento completo de uma aplicação em C#
 
-O .NET está mais relevante do que nunca, e o C# continua sendo a linguagem mais popular e recomendada para trabalhar com essa plataforma, figurando entre as cinco linguagens mais utilizadas no mundo.
+O **.NET** está mais relevante do que nunca, e o **C#** continua sendo a linguagem mais popular e recomendada para trabalhar com essa 
+plataforma, figurando entre as cinco linguagens mais utilizadas no mundo.
 
-Neste curso, você aprenderá desde a configuração do ambiente até a sintaxe e os principais recursos da linguagem, adquirindo uma base sólida para o desenvolvimento em C#.
+Aqui você aprenderá desde a configuração do ambiente até a sintaxe e os principais recursos da linguagem, 
+adquirindo uma base sólida para o desenvolvimento com **C#**.
 
-Com esse conhecimento, você estará preparado para avançar para tópicos mais complexos, como ASP.NET, Windows Forms, MAUI e muito mais.
+Com esses conhecimentos, você estará preparado para avançar para tópicos mais complexos, como **ASP.NET**, **Windows Forms**, **MAUI** 
+e muito mais.
 
-Todos os exemplos deste curso foram desenvolvidos com o **.NET Core 9.0** (última versão disponível).
+Todos os exemplos aqui foram desenvolvidos com o **.NET Core 9.0** *(última versão disponível)*.
 
 ### O que é lógica de programação?
 ![](.doc/img/1-raciocinio-logico.jpg)
@@ -65,13 +68,41 @@ bibliotecas e linguagens de programação para facilitar o desenvolvimento de so
 - .**NET Runtime:** Responsável pela execução dos aplicativos, incluindo o gerenciamento de memória e segurança;
 - **ASP.NET Core:** Framework para desenvolvimento de aplicações **web** e **APIs REST**;
 - **Entity Framework Core:** ORM para facilitar o acesso a bancos de dados;
-- **Blazor:** Permite criar aplicações web usando **C#** em vez de JavaScript;
+- **Blazor:** Permite criar aplicações web usando **C#** em vez de **JavaScript**;
 - **MAUI:** Framework para desenvolvimento de aplicativos mobile e desktop com **C#**.
 
 **Evolução do .NET:**
 - **.NET Framework (2002):** Versão original, compatível apenas com Windows;
 - **.NET Core (2016):** Versão open-source e multiplataforma;
-- **.NET 5+ (2020 em diante):** Unificação do .NET Framework e .NET Core, com suporte contínuo e melhorias.
+- **.NET 5+ (2020 em diante):** Unificação do **.NET Framework** e **.NET Core**, com suporte contínuo e melhorias.
 
 O .NET é uma plataforma poderosa e flexível, amplamente usada para desenvolver aplicações escaláveis e de alto desempenho.
+
+### O que é CLR (Common Language Runtime)?
+**CLR (Common Language Runtime)** é o componente principal do **.NET**, responsável por executar os aplicativos 
+desenvolvidos na plataforma. Ele funciona como uma máquina virtual, gerenciando a execução do código, memória, segurança e 
+outros aspectos importantes para o funcionamento das aplicações **.NET**.
+
+**Principais funções do CLR:**
+- **Compilação Just-In-Time (JIT):** Converte o código intermediário **(IL - Intermediate Language)** para código de máquina no momento
+ da execução;
+- **Gerenciamento de Memória:** Inclui o **Garbage Collector (GC)**, que libera automaticamente a memória ocupada por objetos não utilizados;
+- **Segurança e Controle de Acesso:** Garante que o código seja executado de forma segura e protege contra acessos indevidos;
+- **Tratamento de Exceções:** Gerencia erros durante a execução do programa;
+- **Interoperabilidade:** Permite a integração com código nativo **(C, C++)** e componentes **COM**.
+
+**Fluxo de Execução no CLR:**
+1. O código-fonte *(ex: C#)* é compilado para **IL (Intermediate Language)**;
+2. O **IL** é armazenado em um arquivo *.dll* ou *.exe* junto com os metadados do programa;
+3. Quando o programa é executado, o **JIT Compiler** converte o **IL** em código de máquina;
+4. O **CLR** gerencia a execução do código, otimizando desempenho e garantindo segurança.
+
+**Benefícios do CLR:**
+- **Portabilidade:** O código **IL** pode ser executado em qualquer sistema que tenha o **.NET** instalado;
+- **Segurança:** Protege contra código malicioso e vulnerabilidades;
+- **Eficiência:** O **JIT Compiler** otimiza o código durante a execução;
+- **Facilidade de Desenvolvimento:** Automatiza o gerenciamento de memória e exceções.
+
+O **CLR** é um dos pilares que tornam o **.NET** uma plataforma robusta e confiável para o desenvolvimento de 
+aplicações escaláveis e seguras.
 
