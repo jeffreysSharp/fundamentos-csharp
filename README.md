@@ -227,7 +227,7 @@ A seguir, vamos explorar três das IDEs mais utilizadas no mundo para desenvolvi
 
 ![](.doc/img/2-ides-desenvolvimento.JPG)
 
-**Visual Studio Code**
+**Visual Studio Code**<br />
 O **Visual Studio Code** é uma das IDEs mais utilizadas no mundo, e um dos principais motivos para sua popularidade é o fato 
 de ser **multiplataforma**. Desenvolvida pela Microsoft, essa IDE pode ser utilizada no **Windows**, **Linux** e **macOS**, 
 oferecendo suporte para diferentes ambientes de desenvolvimento.
@@ -236,20 +236,20 @@ Além disso, o **VS Code** é uma ferramenta open source *(código aberto)*, o q
 pode acessar seu código-fonte no **GitHub** e até mesmo contribuir para o projeto. Outro grande diferencial é o suporte a 
 múltiplas linguagens de programação, permitindo que desenvolvedores de diversas tecnologias utilizem a mesma ferramenta com eficiência.
 
-**Visual Studio**
+**Visual Studio**<br />
 O **Visual Studio** é, na minha opinião, a melhor IDE para desenvolvimento em **.NET**. No entanto, possui algumas limitações, 
 sendo a principal delas a compatibilidade exclusiva com o Windows.
 
 Existem diferentes versões do **Visual Studio**:
 
-- **Visual Studio Community:** 
+- **Visual Studio Community:** <br />
 Versão gratuita, porém com restrições para uso comercial. Isso significa que você pode 
 utilizá-la livremente para projetos pessoais e educacionais, mas não para desenvolver sistemas comerciais.
 
-- **Visual Studio Professional e Enterprise:** 
+- **Visual Studio Professional e Enterprise:** <br />
 Versões pagas, que oferecem recursos avançados voltados para empresas e equipes de desenvolvimento profissional.
 
-- **JetBrains Rider**
+- **JetBrains Rider**<br />
 Outra excelente opção de IDE para desenvolvimento .NET é o **JetBrains Rider**. Diferente do **Visual Studio**, o Rider é 
 multiplataforma, permitindo que você desenvolva aplicações no **Windows**, **Linux** e **macOS**.
 
