@@ -107,11 +107,11 @@ O **CLR** é um dos pilares que tornam o **.NET** uma plataforma robusta e confi
 aplicações escaláveis e seguras.
 
 ### O que é um projeto .NET?
-Um projeto **.NET** é uma estrutura organizada de arquivos e configurações usada para desenvolver aplicações na plataforma **.NET**. 
+Um projeto **.NET** é um arquivo com extensão *.csproj*, com uma estrutura organizada de arquivos e configurações usada para desenvolver aplicações na plataforma **.NET**. 
 Ele contém o código-fonte, dependências, bibliotecas e metadados necessários para compilar e executar um aplicativo.
 
 
-**Principais tipos de projetos .NET**
+**Principais tipos de projetos .NET**<br />
 Na plataforma **.NET**, é possível criar diversos tipos de projetos, incluindo:
 
 - **Aplicações Web:** Criadas com **ASP.NET Core**, podendo incluir **APIs REST**, aplicações **MVC** e **Blazor**;
@@ -122,7 +122,7 @@ Na plataforma **.NET**, é possível criar diversos tipos de projetos, incluindo
 - **Jogos:** Desenvolvidos com **Unity** usando **C#**;
 - **Sistemas embarcados e IoT:** Aplicações para dispositivos embarcados, como sensores e microcontroladores.
 
-**Estrutura básica de um projeto .NET**
+**Estrutura básica de um projeto .NET**<br />
 Ao criar um projeto, ele contém arquivos essenciais, como:
 <p>
 📂 /src - Código-fonte do projeto<br />
@@ -134,7 +134,7 @@ Ao criar um projeto, ele contém arquivos essenciais, como:
 📄 csproj – Arquivo de configuração do projeto que define dependências e propriedades<br />
 </p>
 
-**Como criar um projeto .NET?**
+**Como criar um projeto .NET?**<br />
 Você pode criar um novo projeto usando o **CLI** do **.NET** ou o **Visual Studio**.
 
 **No terminal:**
