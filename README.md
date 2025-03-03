@@ -162,38 +162,38 @@ Uma solução **.NET** é um agrupamento de projetos **.NET** dentro de um únic
 
 No Visual Studio, a solução é representada por um arquivo com a extensão *.sln*, que contém referências a todos os projetos dentro dela.
 
-**Diferença entre um projeto e uma solução**
-📌 Projeto .NET – Contém código-fonte, configurações e dependências para criar um único componente ou aplicação.
+**Diferença entre um projeto e uma solução**<br />
+📌 Projeto .NET – Contém código-fonte, configurações e dependências para criar um único componente ou aplicação.<br />
 
-📌 Solução .NET – Agrupa vários projetos relacionados, permitindo gerenciar o desenvolvimento de um sistema complexo.
+📌 Solução .NET – Agrupa vários projetos relacionados, permitindo gerenciar o desenvolvimento de um sistema complexo.<br />
 
-**Exemplo:**
-Uma aplicação de corretora de investimentos pode ter a seguinte estrutura:
+**Exemplo:**<br />
+Uma aplicação de corretora de investimentos pode ter a seguinte estrutura:<br />
 
-📂 CorretoraInvestimentos.sln (Solução)
-├── 📂 Enterprise.Applications.API (Projeto de API)
-├── 📂 Enterprise.Applications.Infra (Projeto de Infraestrutura e Banco de Dados)
-├── 📂 Enterprise.Applications.Domain (Projeto de Regras de Negócio – DDD)
-├── 📂 Enterprise.Applications.Application (Projeto de Serviços e Aplicação)
-├── 📂 Enterprise.Applications.Tests (Projeto de Testes Unitários)
+📂 CorretoraInvestimentos.sln (Solução)<br />
+├── 📂 Enterprise.Applications.API (Projeto de API)<br />
+├── 📂 Enterprise.Applications.Infra (Projeto de Infraestrutura e Banco de Dados)<br />
+├── 📂 Enterprise.Applications.Domain (Projeto de Regras de Negócio – DDD)<br />
+├── 📂 Enterprise.Applications.Application (Projeto de Serviços e Aplicação)<br />
+├── 📂 Enterprise.Applications.Tests (Projeto de Testes Unitários)<br />
 
 Cada um desses projetos tem uma função específica, e a solução facilita o gerenciamento de todos eles.
 
-**Principais vantagens de uma solução .NET**
-✅ Modularização – Separa código em projetos distintos, melhorando a organização.
-✅ Reutilização de Código – Permite que diferentes projetos compartilhem bibliotecas comuns.
-✅ Gerenciamento de Dependências – Cada projeto pode ter suas próprias dependências ou compartilhar pacotes do NuGet.
-✅ Facilidade de Compilação – O Visual Studio compila todos os projetos na ordem correta, respeitando as dependências.
-✅ Colaboração – Equipes podem trabalhar em diferentes projetos dentro da mesma solução.
+**Principais vantagens de uma solução .NET**<br />
+✅ Modularização – Separa código em projetos distintos, melhorando a organização.<br />
+✅ Reutilização de Código – Permite que diferentes projetos compartilhem bibliotecas comuns.<br />
+✅ Gerenciamento de Dependências – Cada projeto pode ter suas próprias dependências ou compartilhar pacotes do NuGet.<br />
+✅ Facilidade de Compilação – O Visual Studio compila todos os projetos na ordem correta, respeitando as dependências.<br />
+✅ Colaboração – Equipes podem trabalhar em diferentes projetos dentro da mesma solução.<br />
 
-**Como criar uma solução .NET?**
-Pelo Visual Studio:
+**Como criar uma solução .NET?**<br />
+Pelo Visual Studio:<br />
 
 1️⃣ Abra o Visual Studio e clique em Criar um novo projeto.
 2️⃣ Escolha Solução em Branco e defina um nome.
 3️⃣ Adicione projetos à solução clicando com o botão direito e selecionando Adicionar > Novo Projeto.
 
-**Pelo terminal (CLI do .NET)**
+**Pelo terminal (CLI do .NET)**<br />
 ```
  // Criar uma nova solução
  dotnet new sln -n MinhaSolucao
@@ -206,7 +206,7 @@ Pelo Visual Studio:
 
 ```
 
-**Conclusão**
+**Conclusão**<br />
 Uma solução **.NET** é essencial para o desenvolvimento de sistemas modulares e escaláveis, permitindo organizar múltiplos 
 projetos dentro de um único ambiente. Isso facilita a manutenção, melhora a colaboração e mantém o código bem estruturado.
 
