@@ -126,12 +126,12 @@ Na plataforma **.NET**, é possível criar diversos tipos de projetos, incluindo
 Ao criar um projeto, ele contém arquivos essenciais, como:
 <p>
 📂 /src - Código-fonte do projeto<br />
-📂 /tests – Testes automatizados, unitários e de integração<br />
-📂 /wwwroot – Arquivos estáticos (CSS, JS, imagens) em aplicações **Web**<br />
-📄 Program.cs – Arquivo principal que inicia a aplicação<br />
-📄 Startup.cs – Configuração de serviços e middlewares (em projetos **ASP.NET Core**)<br />
-📄 appsettings.json – Arquivo de configuração da aplicação<br />
-📄 csproj – Arquivo de configuração do projeto que define dependências e propriedades<br />
+📂 /tests - Testes automatizados, unitários e de integração<br />
+📂 /wwwroot - Arquivos estáticos (CSS, JS, imagens) em aplicações Web<br />
+📄 Program.cs - Arquivo principal que inicia a aplicação<br />
+📄 Startup.cs = Configuração de serviços e middlewares (em projetos ASP.NET Core)<br />
+📄 appsettings.json - Arquivo de configuração da aplicação<br />
+📄 csproj - Arquivo de configuração do projeto que define dependências e propriedades<br />
 </p>
 
 **Como criar um projeto .NET?**<br />
@@ -151,9 +151,67 @@ dotnet run
 4. Selecionar o diretório onde quer criar o projeto;
 5. Criar e iniciar o desenvolvimento.
 
-**Conclusão**
+**Conclusão**<br/>
 Um projeto **.NET** fornece uma estrutura organizada para desenvolver diferentes tipos de aplicações. 
 Ele permite criar desde **web apps** e **APIs** até **aplicações móveis**, **desktop** e **jogos**, utilizando a linguagem **C#**, **F#** ou **VB.NET**.
+
+
+### O que é uma solução .NET?
+Uma solução **.NET** é um agrupamento de projetos **.NET** dentro de um único ambiente de desenvolvimento. Ela é usada para organizar
+ e gerenciar múltiplos projetos que fazem parte de um mesmo sistema, facilitando o desenvolvimento, a manutenção e a compilação da aplicação.
+
+No Visual Studio, a solução é representada por um arquivo com a extensão *.sln*, que contém referências a todos os projetos dentro dela.
+
+**Diferença entre um projeto e uma solução**
+📌 Projeto .NET – Contém código-fonte, configurações e dependências para criar um único componente ou aplicação.
+
+📌 Solução .NET – Agrupa vários projetos relacionados, permitindo gerenciar o desenvolvimento de um sistema complexo.
+
+**Exemplo:**
+Uma aplicação de corretora de investimentos pode ter a seguinte estrutura:
+
+📂 CorretoraInvestimentos.sln (Solução)
+├── 📂 Enterprise.Applications.API (Projeto de API)
+├── 📂 Enterprise.Applications.Infra (Projeto de Infraestrutura e Banco de Dados)
+├── 📂 Enterprise.Applications.Domain (Projeto de Regras de Negócio – DDD)
+├── 📂 Enterprise.Applications.Application (Projeto de Serviços e Aplicação)
+├── 📂 Enterprise.Applications.Tests (Projeto de Testes Unitários)
+
+Cada um desses projetos tem uma função específica, e a solução facilita o gerenciamento de todos eles.
+
+**Principais vantagens de uma solução .NET**
+✅ Modularização – Separa código em projetos distintos, melhorando a organização.
+✅ Reutilização de Código – Permite que diferentes projetos compartilhem bibliotecas comuns.
+✅ Gerenciamento de Dependências – Cada projeto pode ter suas próprias dependências ou compartilhar pacotes do NuGet.
+✅ Facilidade de Compilação – O Visual Studio compila todos os projetos na ordem correta, respeitando as dependências.
+✅ Colaboração – Equipes podem trabalhar em diferentes projetos dentro da mesma solução.
+
+**Como criar uma solução .NET?**
+Pelo Visual Studio:
+
+1️⃣ Abra o Visual Studio e clique em Criar um novo projeto.
+2️⃣ Escolha Solução em Branco e defina um nome.
+3️⃣ Adicione projetos à solução clicando com o botão direito e selecionando Adicionar > Novo Projeto.
+
+**Pelo terminal (CLI do .NET)**
+```
+ // Criar uma nova solução
+ dotnet new sln -n MinhaSolucao
+
+ // Criar um projeto de API
+ dotnet new webapi -n MinhaAPI
+
+ // Adicionar o projeto à solução
+ dotnet sln MinhaSolucao.sln add MinhaAPI
+
+```
+
+**Conclusão**
+Uma solução **.NET** é essencial para o desenvolvimento de sistemas modulares e escaláveis, permitindo organizar múltiplos 
+projetos dentro de um único ambiente. Isso facilita a manutenção, melhora a colaboração e mantém o código bem estruturado.
+
+
+
 
 
 
