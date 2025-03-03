@@ -124,14 +124,15 @@ Na plataforma **.NET**, é possível criar diversos tipos de projetos, incluindo
 
 **Estrutura básica de um projeto .NET**
 Ao criar um projeto, ele contém arquivos essenciais, como:
-
-📂 /src – Código-fonte do projeto;
-📂 /tests – Testes automatizados, unitários e de integração;
-📂 /wwwroot – Arquivos estáticos (CSS, JS, imagens) em aplicações **Web**;
-📄 Program.cs – Arquivo principal que inicia a aplicação;
-📄 Startup.cs – Configuração de serviços e middlewares (em projetos **ASP.NET Core**);
-📄 appsettings.json – Arquivo de configuração da aplicação;
-📄 csproj – Arquivo de configuração do projeto que define dependências e propriedades.
+<p>
+📂 /src - Código-fonte do projeto<br />
+📂 /tests – Testes automatizados, unitários e de integração<br />
+📂 /wwwroot – Arquivos estáticos (CSS, JS, imagens) em aplicações **Web**<br />
+📄 Program.cs – Arquivo principal que inicia a aplicação<br />
+📄 Startup.cs – Configuração de serviços e middlewares (em projetos **ASP.NET Core**)<br />
+📄 appsettings.json – Arquivo de configuração da aplicação<br />
+📄 csproj – Arquivo de configuração do projeto que define dependências e propriedades<br />
+</p>
 
 **Como criar um projeto .NET?**
 Você pode criar um novo projeto usando o **CLI** do **.NET** ou o **Visual Studio**.
