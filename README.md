@@ -170,12 +170,12 @@ No Visual Studio, a solução é representada por um arquivo com a extensão *.s
 **Exemplo:**<br />
 Uma aplicação de corretora de investimentos pode ter a seguinte estrutura:<br />
 
-📂 CorretoraInvestimentos.sln (Solução)<br />
-├── 📂 Enterprise.Applications.API (Projeto de API)<br />
-├── 📂 Enterprise.Applications.Infra (Projeto de Infraestrutura e Banco de Dados)<br />
-├── 📂 Enterprise.Applications.Domain (Projeto de Regras de Negócio – DDD)<br />
-├── 📂 Enterprise.Applications.Application (Projeto de Serviços e Aplicação)<br />
-├── 📂 Enterprise.Applications.Tests (Projeto de Testes Unitários)<br />
+📂 Corretora.Investimentos.sln (Solução)<br />
+├── 📂 Corretora.Investimentos.API (Projeto de API)<br />
+├── 📂 Corretora.Investimentos.Infra (Projeto de Infraestrutura e Banco de Dados)<br />
+├── 📂 Corretora.Investimentos.Domain (Projeto de Regras de Negócio – DDD)<br />
+├── 📂 Corretora.Investimentos.Application (Projeto de Serviços e Aplicação)<br />
+├── 📂 Corretora.Investimentos.Tests (Projeto de Testes)<br />
 
 Cada um desses projetos tem uma função específica, e a solução facilita o gerenciamento de todos eles.
 
@@ -189,9 +189,9 @@ Cada um desses projetos tem uma função específica, e a solução facilita o g
 **Como criar uma solução .NET?**<br />
 Pelo Visual Studio:<br />
 
-1️⃣ Abra o Visual Studio e clique em Criar um novo projeto.
-2️⃣ Escolha Solução em Branco e defina um nome.
-3️⃣ Adicione projetos à solução clicando com o botão direito e selecionando Adicionar > Novo Projeto.
+1️⃣ Abra o Visual Studio e clique em Criar um novo projeto.<br />
+2️⃣ Escolha Solução em Branco e defina um nome.<br />
+3️⃣ Adicione projetos à solução clicando com o botão direito e selecionando Adicionar > Novo Projeto.<br />
 
 **Pelo terminal (CLI do .NET)**<br />
 ```
