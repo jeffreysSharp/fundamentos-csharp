@@ -1,12 +1,39 @@
 [Back to README](../README.md)
 
-# Principais Tipos de Dados no .NET:
+## Principais Tipos de Dados no .NET:
+Os principais tipos de dados do C# são fundamentais para o desenvolvimento de aplicações, permitindo a escolha do tipo adequado para armazenar cada tipo de informação de forma eficiente.
 
+![](img/data-types.jpg)
 
-- **Tipos de Valor** 
+No **C#**, os tipos de dados são categorizados em **tipos de valor** e **tipos de referência**. Uma variável do tipo de valor 
+armazena diretamente uma instância do dado, enquanto uma variável do tipo de referência armazena um ponteiro para a instância.
+
+Por padrão, ao passar um argumento para um método ou retornar um resultado, os valores das variáveis são copiados. No caso de tipos de valor, a instância inteira é copiada, garantindo que a modificação dentro do método não afete a variável original.
+
+Para exemplificar, imagine um sistema de cadastro de pessoas. Ao cadastrar um usuário, precisamos armazenar seu nome e idade. O nome será armazenado em um tipo específico para texto, enquanto a idade será armazenada em um tipo numérico apropriado. Esses tipos de dados são essenciais para garantir a estrutura correta das informações, e é isso que exploraremos agora.
+
+### Tipos de Valor
 Armazenam dados diretamente e incluem:​
 
-- **Inteiros:**
+- **Tipos de Dados Numéricos**
+Os tipos numéricos no C# são divididos em **números inteiros**, **números de ponto flutuante** e **números decimais**. 
+Cada um tem seu próprio propósito e faixa de valores.
+
+  - **Números Inteiros (Integral Types):**
+São usados para armazenar números sem casas decimais.
+| Tipo   | Tamanho | Faixa de valores | Exemplo |
+|--------|---------|------------------|---------|
+|sbyte   | 8 bits	 | -128 a 127	      | sbyte idade = 25 |
+|byte	   | 8 bits	 | 0 a 255	        | byte quantidade = 200 |
+|short	 | 16 bits | -32.768 a 32.767	| short ano = 2024 |
+|ushort	 | 16 bits |	0 a 65.535	    | ushort velocidade = 120 |
+|int	   | 32 bits |	-2.147.483.648 a 2.147.483.647 | int populacao = 1500000 |
+|uint	   | 32 bits |	0 a 4.294.967.295	| uint distancia = 300000 |
+|long	   | 64 bits |	-9.223.372.036.854.775.808 a 9.223.372.036.854.775.807	| long galaxias = 1000000000000L |
+|ulong	 | 64 bits |	0 a 18.446.744.073.709.551.615	| ulong estrelas = 900000000000000UL |
+|--------|---------|------------------|---------|
+
+
 | Tipo C# | Valor  |
 |--------|--------|
 |byte | 8 bits, 0 a 255 |
