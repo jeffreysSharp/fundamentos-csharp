@@ -12,14 +12,11 @@ namespace CSharp.Fundamentals.Application.Services
             _productRepository = productRepository;
         }
 
-        public Product CreateProduct(string name, decimal price)
+        public void CreateProduct(Product product)
         {
-            var product = new Product(name, price);
-
             _productRepository.CreateProduct(product);
-
-            return product;
         }
+
         public IEnumerable<Product> GetAllProducts()
         {
             return _productRepository.GetAllProducts();
@@ -30,13 +27,13 @@ namespace CSharp.Fundamentals.Application.Services
             return _productRepository.GetProductById(productId);
         }
 
-        public void UpdateProduct(Guid productId, string name, decimal price)
+        public void UpdateProduct(Guid id, string name, decimal price)
         {
-            var product = _productRepository.GetProductById(productId);
-
-            if(product != null)
+            var existingProduct = _productRepository.GetProductById(id);
+            if (existingProduct != null)
             {
-                _productRepository.UpdateProduct(product);
+                existingProduct.Update(name, price);
+                _productRepository.UpdateProduct(existingProduct);
             }
         }
 
@@ -44,6 +41,5 @@ namespace CSharp.Fundamentals.Application.Services
         {
             _productRepository.DeleteProduct(productId);
         }
-
     }
 }

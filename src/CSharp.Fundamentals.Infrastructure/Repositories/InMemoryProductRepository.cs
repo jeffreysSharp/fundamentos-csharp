@@ -7,18 +7,23 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
     {
         private readonly Dictionary<Guid, Product> _products = new();
 
-        public Product CreateProduct(Product product) => _products[product.Id] = product;
+        public void CreateProduct(Product product) => _products[product.Id] = product;
         public IEnumerable<Product> GetAllProducts() => _products.Values;
         public Product GetProductById(Guid productId) => _products.ContainsKey(productId) ? _products[productId] : null;
         public void UpdateProduct(Product product)
         {
             if (_products.ContainsKey(product.Id))
             {
-                _products[product.Id] = product;
+                var existingProduct = _products[product.Id];
+                existingProduct.Update(product.Name, product.Price);
             }
         }
 
-        public void DeleteProduct(Guid productId) => _products.Remove(productId);
+        public void DeleteProduct(Guid productId)
+        {
+            if (_products.ContainsKey(productId))
+                _products.Remove(productId);
+        }
 
     }
 }

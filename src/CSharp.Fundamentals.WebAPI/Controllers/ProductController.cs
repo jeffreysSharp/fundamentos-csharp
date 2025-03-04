@@ -1,10 +1,11 @@
 ﻿using CSharp.Fundamentals.Application.Services;
+using CSharp.Fundamentals.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CSharp.Fundamentals.WebAPI.Controllers
 {
     [ApiController]
-    [Route("/api[controller]")]
+    [Route("api[controller]")]
     public class ProductController : ControllerBase
     {
         private readonly ProductService _productService;
@@ -15,10 +16,10 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateProduct([FromBody] ProductRequest productRequest)
+        public IActionResult CreateProduct([FromBody] Product product)
         {
-            _productService.CreateProduct(productRequest.Name, productRequest.Price);
-            return CreatedAtAction(nameof(GetProductById), new { id = productRequest.Name }, productRequest);
+            _productService.CreateProduct(product);
+            return Ok();
         }
 
         [HttpGet]
@@ -38,30 +39,27 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateProduct(Guid productId, [FromBody] ProductRequest productRequest)
+        public IActionResult UpdateProduct(Guid id, [FromBody] Product product)
         {
-            var existingProduct = _productService.GetProductById(productId);
+            var existingProduct = _productService.GetProductById(id);
 
-            if(existingProduct == null) return NotFound();
-            
-            _productService.UpdateProduct(productId, productRequest.Name, productRequest.Price);
+            if (existingProduct == null) return NotFound();
+
+            _productService.UpdateProduct(id, product.Name, product.Price);
 
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteProduct(Guid productId)
+        public IActionResult DeleteProduct(Guid id)
         {
-            var existingProduct = _productService.GetProductById(productId);
+            var existingProduct = _productService.GetProductById(id);
 
             if (existingProduct == null) return NotFound();
 
-            _productService.DeleteProduct(productId);
+            _productService.DeleteProduct(id);
 
             return NoContent();
         }
-
-
-        public record ProductRequest(string Name, decimal Price);
     }
 }
