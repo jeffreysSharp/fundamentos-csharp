@@ -19,7 +19,7 @@ Armazenam dados diretamente e incluem:​
 Os tipos numéricos no C# são divididos em **números inteiros**, **números de ponto flutuante** e **números decimais**. 
 Cada um tem seu próprio propósito e faixa de valores.
 
-**Números Inteiros (Integral Types):**
+**Números Inteiros (Integral Types):**<br />
 São usados para armazenar números sem casas decimais.
 | Tipo   | Tamanho | Faixa de valores | Exemplo |
 |--------|---------|------------------|---------|
@@ -32,26 +32,33 @@ São usados para armazenar números sem casas decimais.
 |long	   | 64 bits |	-9.223.372.036.854.775.808 a 9.223.372.036.854.775.807	| long galaxias = 1000000000000L |
 |ulong	 | 64 bits |	0 a 18.446.744.073.709.551.615	| ulong estrelas = 900000000000000UL |
 
+**Observação:** Use *int* na maioria dos casos, pois é o mais eficiente. Apenas utilize *long* ou *short* quando necessário.<br />
+
+**Números de Ponto Flutuante (Floating-Point Types)**<br />
+Armazenam números com casas decimais e são usados quando precisamos de valores **aproximados**, como cálculos científicos.
+| Tipo   | Tamanho | Precisão | Exemplo |
+|--------|---------|------------------|---------|
+|float	 | 32 bits | 7 dígitos	      | float temperatura = 36.6f|
+|double	 |64 bits  | 15-16 dígitos	  | double pi = 3.14159265359|
+
+**Observação:** Prefira *double* na maioria dos casos, pois é mais preciso que *float*. <br />
+
+**Tipo Decimal (Precision Numeric Type)** <br />
+Projetado para cálculos financeiros e monetários, pois **evita erros de arredondamento**.
+| Tipo   | Tamanho | Precisão | Exemplo |
+|--------|---------|------------------|---------|
+|decimal |128 bits | 28-29 dígitos	  | decimal preco = 99.99m|
+**Quando usar?**<br />
+- Para cálculos financeiros (*decimal* é mais preciso do que *double* e *float*).
+- Quando for necessário armazenar números com alta precisão, como valores monetários.
+
+**Resumo** <br />
+- Use int para números inteiros.
+- Use double para cálculos gerais com casas decimais.
+- Use decimal para cálculos financeiros que exigem alta precisão.
 
 
-| Tipo C# | Valor  |
-|--------|--------|
-|byte | 8 bits, 0 a 255 |
-|sbyte | 8 bits, -128 a 127 |
-|short | 16 bits, -32.768 a 32.767 |
-|ushort | 16 bits, 0 a 65.535
-|int | 32 bits, -2.147.483.648 a 2.147.483.647 |
-|uint | 32 bits, 0 a 4.294.967.295 |
-|long | 64 bits, -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807 |
-|ulong | 64 bits, 0 a 18.446.744.073.709.551.615 |
 
-- **Ponto Flutuante:**
-| Tipo C# | Valor  |
-|--------|--------|
-|float | 32 bits, ±1,5 x 10^−45 a ±3,4 x 10^38 |
-|double | 64 bits, ±5,0 x 10^−324 a ±1,7 x 10^308 |
-|decimal| 128 bits, adequado para cálculos financeiros e monetários |
-  
 - **Outros:**
 | Tipo C# | Valor  |
 |--------|--------|
