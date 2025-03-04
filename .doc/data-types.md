@@ -31,7 +31,7 @@ São usados para armazenar números sem casas decimais.
 |uint	   | 32 bits |	0 a 4.294.967.295	| uint distancia = 300000 |
 |long	   | 64 bits |	-9.223.372.036.854.775.808 a 9.223.372.036.854.775.807	| long galaxias = 1000000000000L |
 |ulong	 | 64 bits |	0 a 18.446.744.073.709.551.615	| ulong estrelas = 900000000000000UL |
-|--------|---------|------------------|---------|
+
 
 
 | Tipo C# | Valor  |
