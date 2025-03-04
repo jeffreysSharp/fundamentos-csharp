@@ -211,6 +211,58 @@ Uma solução **.NET** é essencial para o desenvolvimento de sistemas modulares
 projetos dentro de um único ambiente. Isso facilita a manutenção, melhora a colaboração e mantém o código bem estruturado.
 
 
+### Preparando o ambiente
+**Conhecendo IDEs de Desenvolvimento**
+Durante o ciclo de desenvolvimento de uma aplicação, o uso de uma **IDE (Integrated Development Environment ou Ambiente de Desenvolvimento Integrado)**
+ é essencial para aumentar a produtividade e facilitar a escrita do código.
+
+O principal objetivo de uma IDE é agilizar o desenvolvimento ao oferecer ferramentas que simplificam o processo de codificação. 
+Entre essas ferramentas, destaca-se o IntelliSense, um recurso que sugere e completa automaticamente trechos de código, 
+reduzindo erros e tornando a programação mais eficiente.
+
+Embora seja possível escrever código em um editor simples, como o Notepad, e compilar a aplicação manualmente via console, 
+as IDEs proporcionam um ambiente muito mais produtivo, reunindo recursos como depuração integrada, controle de versão, testes e muito mais.
+
+A seguir, vamos explorar três das IDEs mais utilizadas no mundo para desenvolvimento de software:
+
+![](.doc/img/2-ides-desenvolvimento.JPG)
+
+**Visual Studio Code**<br />
+O **Visual Studio Code** é uma das IDEs mais utilizadas no mundo, e um dos principais motivos para sua popularidade é o fato 
+de ser **multiplataforma**. Desenvolvida pela Microsoft, essa IDE pode ser utilizada no **Windows**, **Linux** e **macOS**, 
+oferecendo suporte para diferentes ambientes de desenvolvimento.
+
+Além disso, o **VS Code** é uma ferramenta open source *(código aberto)*, o que significa que qualquer desenvolvedor 
+pode acessar seu código-fonte no **GitHub** e até mesmo contribuir para o projeto. Outro grande diferencial é o suporte a 
+múltiplas linguagens de programação, permitindo que desenvolvedores de diversas tecnologias utilizem a mesma ferramenta com eficiência.
+
+**Visual Studio**<br />
+O **Visual Studio** é, na minha opinião, a melhor IDE para desenvolvimento em **.NET**. No entanto, possui algumas limitações, 
+sendo a principal delas a compatibilidade exclusiva com o Windows.
+
+Existem diferentes versões do **Visual Studio**:
+
+- **Visual Studio Community:** <br />
+Versão gratuita, porém com restrições para uso comercial. Isso significa que você pode 
+utilizá-la livremente para projetos pessoais e educacionais, mas não para desenvolver sistemas comerciais.
+
+- **Visual Studio Professional e Enterprise:** <br />
+Versões pagas, que oferecem recursos avançados voltados para empresas e equipes de desenvolvimento profissional.
+
+- **JetBrains Rider**<br />
+Outra excelente opção de IDE para desenvolvimento .NET é o **JetBrains Rider**. Diferente do **Visual Studio**, o Rider é 
+multiplataforma, permitindo que você desenvolva aplicações no **Windows**, **Linux** e **macOS**.
+
+No entanto, ao contrário do **Visual Studio Code** e do **Visual Studio Community**, o **JetBrains Rider** não é gratuito. 
+Para utilizá-lo, é necessário adquirir uma licença paga, o que pode ser um fator a ser considerado ao escolher sua 
+ferramenta de desenvolvimento.
+
+
+
+
+
+
+
 
 
 
