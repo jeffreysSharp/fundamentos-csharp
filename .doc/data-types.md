@@ -32,7 +32,8 @@ São usados para armazenar números sem casas decimais.
 |long	   | 64 bits |	-9.223.372.036.854.775.808 a 9.223.372.036.854.775.807	| long galaxias = 1000000000000L; |
 |ulong	 | 64 bits |	0 a 18.446.744.073.709.551.615	| ulong estrelas = 900000000000000UL; |
 
-**Observação:** Use *int* na maioria dos casos, pois é o mais eficiente. Apenas utilize *long* ou *short* quando necessário.<br />
+**Observação:**<br/> 
+Use *int* na maioria dos casos, pois é o mais eficiente. Apenas utilize *long* ou *short* quando necessário.<br />
 
 **Números de Ponto Flutuante (Floating-Point Types)**<br />
 Armazenam números com casas decimais e são usados quando precisamos de valores **aproximados**, como cálculos científicos.
@@ -41,7 +42,8 @@ Armazenam números com casas decimais e são usados quando precisamos de valores
 |float	 | 32 bits | 7 dígitos	      | float temperatura = 36.6f; |
 |double	 |64 bits  | 15-16 dígitos	  | double pi = 3.14159265359; |
 
-**Observação:** Prefira *double* na maioria dos casos, pois é mais preciso que *float*. <br />
+**Observação:**<br/> 
+Prefira *double* na maioria dos casos, pois é mais preciso que *float*. <br />
 
 **Tipo Decimal (Precision Numeric Type)** <br />
 Projetado para cálculos financeiros e monetários, pois **evita erros de arredondamento**.
