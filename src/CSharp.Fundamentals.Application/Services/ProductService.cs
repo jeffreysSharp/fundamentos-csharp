@@ -12,20 +12,38 @@ namespace CSharp.Fundamentals.Application.Services
             _productRepository = productRepository;
         }
 
-        public void RegisterProduct(string name, decimal price)
+        public Product CreateProduct(string name, decimal price)
         {
             var product = new Product(name, price);
-            _productRepository.Add(product);
-        }
 
-        public Product GetProductById(Guid id)
-        {
-            return _productRepository.GetById(id);
-        }
+            _productRepository.CreateProduct(product);
 
+            return product;
+        }
         public IEnumerable<Product> GetAllProducts()
         {
-            return _productRepository.GetAll();
+            return _productRepository.GetAllProducts();
         }
+
+        public Product GetProductById(Guid productId)
+        {
+            return _productRepository.GetProductById(productId);
+        }
+
+        public void UpdateProduct(Guid productId, string name, decimal price)
+        {
+            var product = _productRepository.GetProductById(productId);
+
+            if(product != null)
+            {
+                _productRepository.UpdateProduct(product);
+            }
+        }
+
+        public void DeleteProduct(Guid productId)
+        {
+            _productRepository.DeleteProduct(productId);
+        }
+
     }
 }

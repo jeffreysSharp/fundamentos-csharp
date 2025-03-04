@@ -1,6 +1,5 @@
 ﻿using CSharp.Fundamentals.Application.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace CSharp.Fundamentals.WebAPI.Controllers
 {
@@ -16,14 +15,21 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddProduct([FromBody] ProductRequest request)
+        public IActionResult CreateProduct([FromBody] ProductRequest productRequest)
         {
-            _productService.RegisterProduct(request.Name, request.Price);
-            return CreatedAtAction(nameof(GetById), new { id = request.Name }, request);
+            _productService.CreateProduct(productRequest.Name, productRequest.Price);
+            return CreatedAtAction(nameof(GetProductById), new { id = productRequest.Name }, productRequest);
+        }
+
+        [HttpGet]
+        public IActionResult GetAllProducts()
+        {
+            var products = _productService.GetAllProducts();
+            return Ok(products);
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(Guid id)
+        public IActionResult GetProductById(Guid id)
         {
             var product = _productService.GetProductById(id);
             if (product == null) return NotFound();
@@ -31,11 +37,28 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
             return Ok(product);
         }
 
-        [HttpGet]
-        public IActionResult GetAll()
+        [HttpPut("{id}")]
+        public IActionResult UpdateProduct(Guid productId, [FromBody] ProductRequest productRequest)
         {
-            var products = _productService.GetAllProducts();
-            return Ok(products);
+            var existingProduct = _productService.GetProductById(productId);
+
+            if(existingProduct == null) return NotFound();
+            
+            _productService.UpdateProduct(productId, productRequest.Name, productRequest.Price);
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteProduct(Guid productId)
+        {
+            var existingProduct = _productService.GetProductById(productId);
+
+            if (existingProduct == null) return NotFound();
+
+            _productService.DeleteProduct(productId);
+
+            return NoContent();
         }
 
 

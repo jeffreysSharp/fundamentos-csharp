@@ -6,8 +6,19 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
     public class InMemoryProductRepository : IProductRepository
     {
         private readonly Dictionary<Guid, Product> _products = new();
-        public void Add(Product product) => _products[product.Id] = product;
-        public Product GetById(Guid id) => _products.ContainsKey(id) ? _products[id] : null;
-        public IEnumerable<Product> GetAll() => _products.Values;
+
+        public Product CreateProduct(Product product) => _products[product.Id] = product;
+        public IEnumerable<Product> GetAllProducts() => _products.Values;
+        public Product GetProductById(Guid productId) => _products.ContainsKey(productId) ? _products[productId] : null;
+        public void UpdateProduct(Product product)
+        {
+            if (_products.ContainsKey(product.Id))
+            {
+                _products[product.Id] = product;
+            }
+        }
+
+        public void DeleteProduct(Guid productId) => _products.Remove(productId);
+
     }
 }

@@ -4,8 +4,10 @@ namespace CSharp.Fundamentals.Domain.Repositories
 {
     public interface IProductRepository
     {
-        void Add(Product product);
-        Product GetById(Guid id);
-        IEnumerable<Product> GetAll();
+        Product CreateProduct(Product product);
+        IEnumerable<Product> GetAllProducts();
+        Product GetProductById(Guid productId);
+        void UpdateProduct(Product product);
+        void DeleteProduct(Guid productId);
     }
 }
