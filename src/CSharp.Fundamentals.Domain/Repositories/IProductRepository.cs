@@ -6,5 +6,6 @@ namespace CSharp.Fundamentals.Domain.Repositories
     {
         void Add(Product product);
         Product GetById(Guid id);
+        IEnumerable<Product> GetAll();
     }
 }

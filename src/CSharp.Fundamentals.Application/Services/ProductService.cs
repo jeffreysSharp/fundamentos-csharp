@@ -17,5 +17,15 @@ namespace CSharp.Fundamentals.Application.Services
             var product = new Product(name, price);
             _productRepository.Add(product);
         }
+
+        public Product GetProductById(Guid id)
+        {
+            return _productRepository.GetById(id);
+        }
+
+        public IEnumerable<Product> GetAllProducts()
+        {
+            return _productRepository.GetAll();
+        }
     }
 }

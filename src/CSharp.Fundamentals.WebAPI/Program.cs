@@ -1,3 +1,6 @@
+using CSharp.Fundamentals.Application.Services;
+using CSharp.Fundamentals.Domain.Repositories;
+using CSharp.Fundamentals.Infrastructure.Repositories;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +23,9 @@ builder.Services.AddSwaggerGen(
         });
 
 });
+
+builder.Services.AddSingleton<IProductRepository, InMemoryProductRepository>();
+builder.Services.AddScoped<ProductService>();
 
 var app = builder.Build();
 

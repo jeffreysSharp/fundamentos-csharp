@@ -15,4 +15,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CSharp.Fundamentals.Application\CSharp.Fundamentals.Application.csproj" />
+    <ProjectReference Include="..\CSharp.Fundamentals.Domain\CSharp.Fundamentals.Domain.csproj" />
+    <ProjectReference Include="..\CSharp.Fundamentals.Infrastructure\CSharp.Fundamentals.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
