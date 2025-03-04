@@ -30,11 +30,11 @@ namespace CSharp.Fundamentals.Application.Services
         public void UpdateProduct(Guid id, string name, decimal price)
         {
             var existingProduct = _productRepository.GetProductById(id);
-            if (existingProduct != null)
-            {
-                existingProduct.Update(name, price);
-                _productRepository.UpdateProduct(existingProduct);
-            }
+            if (existingProduct == null)
+                throw new KeyNotFoundException("Produto não encontrado");
+
+            var updatedProduct = existingProduct.Update(name, price);
+            _productRepository.UpdateProduct(updatedProduct);
         }
 
         public void DeleteProduct(Guid productId)

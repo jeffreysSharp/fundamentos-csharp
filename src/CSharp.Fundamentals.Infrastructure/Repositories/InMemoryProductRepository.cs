@@ -14,8 +14,7 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
         {
             if (_products.ContainsKey(product.Id))
             {
-                var existingProduct = _products[product.Id];
-                existingProduct.Update(product.Name, product.Price);
+                _products[product.Id] = product;
             }
         }
 
