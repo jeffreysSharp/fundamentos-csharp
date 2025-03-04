@@ -19,7 +19,7 @@ Armazenam dados diretamente e incluem:​
 Os tipos numéricos no C# são divididos em **números inteiros**, **números de ponto flutuante** e **números decimais**. 
 Cada um tem seu próprio propósito e faixa de valores.
 
-  - **Números Inteiros (Integral Types):**
+**Números Inteiros (Integral Types):**
 São usados para armazenar números sem casas decimais.
 | Tipo   | Tamanho | Faixa de valores | Exemplo |
 |--------|---------|------------------|---------|
