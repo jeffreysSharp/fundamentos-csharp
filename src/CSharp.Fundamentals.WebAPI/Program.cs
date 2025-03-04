@@ -24,7 +24,7 @@ builder.Services.AddSwaggerGen(
 
 });
 
-builder.Services.AddSingleton<IProductRepository, InMemoryProductRepository>();
+builder.Services.AddSingleton<IProductRepository, JsonProductRepository>();
 builder.Services.AddScoped<ProductService>();
 
 var app = builder.Build();
