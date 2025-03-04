@@ -259,7 +259,7 @@ ferramenta de desenvolvimento.
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-  <a href="./data-types.md">Próxima: Principais Tipos de Dados no .NET</a>
+  <a href=".doc/data-types.md">Próxima: Principais Tipos de Dados no .NET</a>
 </div>
 
 
