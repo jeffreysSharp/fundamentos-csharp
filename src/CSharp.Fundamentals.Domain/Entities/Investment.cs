@@ -20,13 +20,6 @@
             DurationInMonths = durationInMonths;
             StartDate = DateTime.UtcNow;
         }
-
-        public decimal CalculateEarnings()
-        {
-            double monthlyRate = InterestRate / 12 / 100;
-            double compoundFactor = Math.Pow(1 + monthlyRate, DurationInMonths);
-            return Amount * (decimal)compoundFactor;
-        }
     }
 
     public enum InvestmentType

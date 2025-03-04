@@ -28,6 +28,7 @@ builder.Services.AddSingleton<IProductRepository, JsonProductRepository>();
 builder.Services.AddSingleton<IInvestmentRepository, JsonInvestmentRepository>();
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<InvestmentService>();
+builder.Services.AddScoped<InvestmentCalculatorService>();
 
 var app = builder.Build();
 

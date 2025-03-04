@@ -38,6 +38,13 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
             if (investment == null) return NotFound();
             return Ok(investment);
         }
+
+        [HttpGet("{id}/earnings")]
+        public IActionResult GetInvestmentEarnings(Guid id)
+        {
+            var earnings = _investmentService.GetInvestmentEarnings(id);
+            return Ok(new { Earnings = earnings });
+        }
     }
 
     public record InvestmentRequest(string InvestorName, InvestmentType Type, decimal Amount, double InterestRate, int DurationInMonths);
