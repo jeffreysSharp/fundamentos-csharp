@@ -257,7 +257,10 @@ No entanto, ao contrário do **Visual Studio Code** e do **Visual Studio Communi
 Para utilizá-lo, é necessário adquirir uma licença paga, o que pode ser um fator a ser considerado ao escolher sua 
 ferramenta de desenvolvimento.
 
-
+<br/>
+<div style="display: flex; justify-content: space-between;">  
+  <a href="./data-types.md">Próxima: Principais Tipos de Dados no .NET</a>
+</div>
 
 
 
