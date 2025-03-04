@@ -12,14 +12,14 @@ Por padrão, ao passar um argumento para um método ou retornar um resultado, os
 
 Para exemplificar, imagine um sistema de cadastro de pessoas. Ao cadastrar um usuário, precisamos armazenar seu nome e idade. O nome será armazenado em um tipo específico para texto, enquanto a idade será armazenada em um tipo numérico apropriado. Esses tipos de dados são essenciais para garantir a estrutura correta das informações, e é isso que exploraremos agora.
 
-### Tipos de Valor
+### Tipos de Valor<br />
 Armazenam dados diretamente e incluem:​
 
-- **Tipos de Dados Numéricos**
+**Tipos de Dados Numéricos**<br />
 Os tipos numéricos no C# são divididos em **números inteiros**, **números de ponto flutuante** e **números decimais**. 
 Cada um tem seu próprio propósito e faixa de valores.
 
-**Números Inteiros (Integral Types):**<br />
+**Números Inteiros (Integral Types)**<br />
 São usados para armazenar números sem casas decimais.
 | Tipo   | Tamanho | Faixa de valores | Exemplo |
 |--------|---------|------------------|---------|
