@@ -1,0 +1,11 @@
+[
+  {
+    "Id": "bc2fd6ea-66c8-4826-9637-05e289223871",
+    "InvestorName": "Jeferson Almeida",
+    "Type": 0,
+    "Amount": 1000,
+    "InterestRate": 10,
+    "DurationInMonths": 12,
+    "StartDate": "2025-03-04T15:46:22.058205Z"
+  }
+]

@@ -25,7 +25,9 @@ builder.Services.AddSwaggerGen(
 });
 
 builder.Services.AddSingleton<IProductRepository, JsonProductRepository>();
+builder.Services.AddSingleton<IInvestmentRepository, JsonInvestmentRepository>();
 builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<InvestmentService>();
 
 var app = builder.Build();
 
