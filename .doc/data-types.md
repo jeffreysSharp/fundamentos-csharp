@@ -87,52 +87,52 @@ As classes são o principal mecanismo para criar **objetos** no C#.<br />
 📌 Uso recomendado: Quando precisamos de objetos mutáveis e herança.<br />
 
 2️⃣ interface <br />
-As **interfaces** definem um contrato, mas não implementam comportamento.
-✔ Permitem **herança múltipla**, pois uma classe pode implementar várias interfaces.
-✔ Muito usadas para **polimorfismo e inversão de dependência**.
+As **interfaces** definem um contrato, mas não implementam comportamento.<br />
+✔ Permitem **herança múltipla**, pois uma classe pode implementar várias interfaces.<br />
+✔ Muito usadas para **polimorfismo e inversão de dependência**.<br />
 
 3️⃣ struct **(Estrutura)**<br />
-O **struct** é um tipo de valor, mas se comporta semelhante a um tipo de referência em alguns casos.
-✔ É mais leve que uma classe.
-✔ Ideal para dados pequenos e imutáveis.
-✔ Não suporta herança.
-📌 Uso recomendado: Quando precisamos de objetos pequenos e imutáveis.
+O **struct** é um tipo de valor, mas se comporta semelhante a um tipo de referência em alguns casos.<br />
+✔ É mais leve que uma classe.<br />
+✔ Ideal para dados pequenos e imutáveis.<br />
+✔ Não suporta herança.<br />
+📌 Uso recomendado: Quando precisamos de objetos pequenos e imutáveis.<br />
 
 4️⃣ object<br />
-O **object** é a **superclasse de todos os tipos no C#**, incluindo tipos de valor e referência.
-✔ Permite armazenar **qualquer tipo de dado**.
-✔ Pode ser **convertido para qualquer outro tipo** através de *boxing/unboxing* (custo de desempenho).
+O **object** é a **superclasse de todos os tipos no C#**, incluindo tipos de valor e referência.<br />
+✔ Permite armazenar **qualquer tipo de dado**.<br />
+✔ Pode ser **convertido para qualquer outro tipo** através de *boxing/unboxing* (custo de desempenho).<br />
 
 📌 **Uso recomendado:** Quando precisamos armazenar **qualquer tipo de dado**, mas evitar quando possível, pois pode causar erros de conversão.
 
 5️⃣ dynamic<br />
-O **dynamic** permite definir **objetos dinâmicos** cujo **tipo é determinado em tempo de execução**.
-✔ Evita verificações de tipo em tempo de compilação.
-✔ Muito útil para **integração com bibliotecas COM, JSON e Reflection**.
+O **dynamic** permite definir **objetos dinâmicos** cujo **tipo é determinado em tempo de execução**.<br />
+✔ Evita verificações de tipo em tempo de compilação.<br />
+✔ Muito útil para **integração com bibliotecas COM, JSON e Reflection**.<br />
 
 📌 **Uso recomendado:** Quando o **tipo exato dos dados não é conhecido em tempo de compilação**, como ao consumir **APIs JSON ou XML**.
 
 6️⃣ string<br />
-O tipo **string** é **imutável** e representa **sequências de caracteres**.
-✔ Quando uma **string** é modificada, uma **nova instância é criada na memória**.
-✔ Pode ser manipulada com métodos como *.ToUpper()*, *.Substring()*, *.Replace()*.
-📌 **Uso recomendado:** Para armazenar **textos**, mas evitar concatenação excessiva (usar *StringBuilder*).
+O tipo **string** é **imutável** e representa **sequências de caracteres**.<br />
+✔ Quando uma **string** é modificada, uma **nova instância é criada na memória**.<br />
+✔ Pode ser manipulada com métodos como *.ToUpper()*, *.Substring()*, *.Replace()*.<br />
+📌 **Uso recomendado:** Para armazenar **textos**, mas evitar concatenação excessiva (usar *StringBuilder*).<br />
 
-7️⃣ record **(C# 9+)**
-O **record** é um **tipo de referência** que representa dados imutáveis.
-✔ Gera automaticamente **métodos** como *Equals* e *ToString*.
-✔ Usa **sintaxe mais concisa** que *class*.
+7️⃣ record **(C# 9+)**<br />
+O **record** é um **tipo de referência** que representa dados imutáveis.<br />
+✔ Gera automaticamente **métodos** como *Equals* e *ToString*.<br />
+✔ Usa **sintaxe mais concisa** que *class*.<br />
 
-📌 **Uso recomendado:** Quando queremos objetos imutáveis com valores estruturados.
+📌 **Uso recomendado:** Quando queremos objetos imutáveis com valores estruturados.<br />
 
-📌 **Conclusão**
-✅ *class* → Para objetos complexos e que exigem herança.
-✅ *interface* → Para definir contratos e garantir implementação em diferentes classes.
-✅ *struct* → Para dados pequenos e imutáveis.
-✅ *object* → Para armazenar qualquer tipo de dado, mas com custo de conversão.
-✅ *dynamic* → Para dados desconhecidos em tempo de compilação, mas pode ser arriscado.
-✅ *string* → Para armazenamento de texto (imutável).
-✅ *record* → Para dados imutáveis estruturados (C# 9+).
+📌 **Conclusão**<br />
+✅ *class* → Para objetos complexos e que exigem herança.<br />
+✅ *interface* → Para definir contratos e garantir implementação em diferentes classes.<br />
+✅ *struct* → Para dados pequenos e imutáveis.<br />
+✅ *object* → Para armazenar qualquer tipo de dado, mas com custo de conversão.<br />
+✅ *dynamic* → Para dados desconhecidos em tempo de compilação, mas pode ser arriscado.<br />
+✅ *string* → Para armazenamento de texto (imutável).<br />
+✅ *record* → Para dados imutáveis estruturados (C# 9+).<br />
 
 **Novidades no .NET 9 Relacionadas a Tipos de Dados:**
 Embora os tipos fundamentais não tenham mudado, o .NET 9 introduziu aprimoramentos e novos tipos para atender a demandas específicas:​
