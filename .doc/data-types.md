@@ -144,6 +144,10 @@ Para aplicações de inteligência artificial, foram introduzidos novos tipos de
 
 Para uma compreensão mais aprofundada, recomendo consultar a documentação oficial da Microsoft sobre os tipos de dados no .NET e as novidades específicas do .NET 9.
 
+Não iremos nos aprofundar nesses tipos agora, pois teremos um módulo específico neste curso dedicado a explorá-los em detalhes.
+
+Fizemos um breve overview sobre esses tipos de dados para que você tenha uma noção geral e saiba escolher o tipo mais adequado durante o desenvolvimento de aplicações.
+
 <br/>
 <div style="display: flex; justify-content: space-between;">  
   <a href="arithmetic-operators.md">Próxima: Operadores Aritiméticos .NET</a>
