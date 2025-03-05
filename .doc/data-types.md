@@ -1,4 +1,4 @@
-## Documentação Completa dos Principais Tipos de Dados no C#:
+## Documentação Completa dos Principais Tipos de Dados no C#
 Os principais tipos de dados do C# são fundamentais para o desenvolvimento de aplicações, permitindo a escolha do tipo adequado para armazenar cada tipo de informação de forma eficiente.
 
 ![](img/data-types.jpg)
