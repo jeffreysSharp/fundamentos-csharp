@@ -32,6 +32,8 @@ builder.Services.AddScoped<InvestmentService>();
 builder.Services.AddScoped<InvestmentCalculatorService>();
 builder.Services.AddScoped<NumericDataService>();
 builder.Services.AddScoped<NumericCalculatorService>();
+builder.Services.AddScoped<ArithmeticService>();
+
 
 var app = builder.Build();
 

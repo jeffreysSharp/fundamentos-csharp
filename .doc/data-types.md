@@ -58,20 +58,81 @@ Projetado para cálculos financeiros e monetários, pois **evita erros de arredo
 **Resumo** <br />
 - Use int para números inteiros.
 - Use double para cálculos gerais com casas decimais.
-- Use decimal para cálculos financeiros que exigem alta precisão.
-
-- **Outros:**
-
-
+- Use decimal para cálculos financeiros que exigem alta precisão. <br />
   
-**Tipos de Referência:** 
-Armazenam referências a dados e incluem:​
-| Tipo C# | Valor  |
-|--------|--------|
-|object| Tipo base de todos os tipos no .NET|
-|string| Sequência de caracteres Unicode|​
-|class e interfaces| definidas pelo usuário|
-|Arrays|  |
+### Tipos de Referência: <br />
+No C#, os **tipos de referência** armazenam **endereços de memória** onde os dados reais estão armazenados, em vez de conter diretamente os valores (como ocorre com os **tipos de valor**).
+
+**Características dos Tipos de Referência**<br />
+- Armazenam **referências** para os dados na memória heap.
+- Podem ser **null** (ao contrário dos tipos de valor).
+- São passados por **referência** para métodos, e não copiados.
+
+**Resumo Comparativo**<br/>
+
+| Tipo     | Mutável | Suporta Herança  | Imutável | Armazena Referência  | Aplicação |
+|----------|---------|------------------|----------|----------------------|-----------|					
+|class	   |✅ Sim	  |✅ Sim	         |❌ Não	   |✅ Sim	              |Objetos complexos e herança |
+|interface |❌ Não	  |✅ Sim	         |❌ Não	   |✅ Sim	              |Definir contratos para classes|
+|struct	   |✅ Sim	  |❌ Não	         |❌ Não	   |❌ Não	              |Pequenos objetos imutáveis|
+|object	   |✅ Sim	  |✅ Sim	         |❌ Não	   |✅ Sim	              |Qualquer tipo de dado|
+|dynamic	 |✅ Sim	  |❌ Não	         |❌ Não	   |✅ Sim	              |Tipos desconhecidos em tempo de compilação|
+|string	   |❌ Não	  |❌ Não	         |✅ Sim	   |✅ Sim	              |Armazenamento de texto|
+|record	   |❌ Não	  |❌ Não	         |✅ Sim	   |✅ Sim	              |Dados imutáveis e estruturados|
+
+1️⃣ class **(Classe)**<br /> 
+As classes são o principal mecanismo para criar **objetos** no C#.<br />
+✔ **Suportam herança e polimorfismo**.<br />
+✔ São **imutáveis por referência**, ou seja, quando passadas para um método, o objeto original pode ser alterado. <br/>
+📌 Uso recomendado: Quando precisamos de objetos mutáveis e herança.<br />
+
+2️⃣ interface <br />
+As **interfaces** definem um contrato, mas não implementam comportamento.
+✔ Permitem **herança múltipla**, pois uma classe pode implementar várias interfaces.
+✔ Muito usadas para **polimorfismo e inversão de dependência**.
+
+3️⃣ struct **(Estrutura)**<br />
+O **struct** é um tipo de valor, mas se comporta semelhante a um tipo de referência em alguns casos.
+✔ É mais leve que uma classe.
+✔ Ideal para dados pequenos e imutáveis.
+✔ Não suporta herança.
+📌 Uso recomendado: Quando precisamos de objetos pequenos e imutáveis.
+
+4️⃣ object<br />
+O **object** é a **superclasse de todos os tipos no C#**, incluindo tipos de valor e referência.
+✔ Permite armazenar **qualquer tipo de dado**.
+✔ Pode ser **convertido para qualquer outro tipo** através de *boxing/unboxing* (custo de desempenho).
+
+📌 **Uso recomendado:** Quando precisamos armazenar **qualquer tipo de dado**, mas evitar quando possível, pois pode causar erros de conversão.
+
+5️⃣ dynamic<br />
+O **dynamic** permite definir **objetos dinâmicos** cujo **tipo é determinado em tempo de execução**.
+✔ Evita verificações de tipo em tempo de compilação.
+✔ Muito útil para **integração com bibliotecas COM, JSON e Reflection**.
+
+📌 **Uso recomendado:** Quando o **tipo exato dos dados não é conhecido em tempo de compilação**, como ao consumir **APIs JSON ou XML**.
+
+6️⃣ string<br />
+O tipo **string** é **imutável** e representa **sequências de caracteres**.
+✔ Quando uma **string** é modificada, uma **nova instância é criada na memória**.
+✔ Pode ser manipulada com métodos como *.ToUpper()*, *.Substring()*, *.Replace()*.
+📌 **Uso recomendado:** Para armazenar **textos**, mas evitar concatenação excessiva (usar *StringBuilder*).
+
+7️⃣ record **(C# 9+)**
+O **record** é um **tipo de referência** que representa dados imutáveis.
+✔ Gera automaticamente **métodos** como *Equals* e *ToString*.
+✔ Usa **sintaxe mais concisa** que *class*.
+
+📌 **Uso recomendado:** Quando queremos objetos imutáveis com valores estruturados.
+
+📌 **Conclusão**
+✅ *class* → Para objetos complexos e que exigem herança.
+✅ *interface* → Para definir contratos e garantir implementação em diferentes classes.
+✅ *struct* → Para dados pequenos e imutáveis.
+✅ *object* → Para armazenar qualquer tipo de dado, mas com custo de conversão.
+✅ *dynamic* → Para dados desconhecidos em tempo de compilação, mas pode ser arriscado.
+✅ *string* → Para armazenamento de texto (imutável).
+✅ *record* → Para dados imutáveis estruturados (C# 9+).
 
 **Novidades no .NET 9 Relacionadas a Tipos de Dados:**
 Embora os tipos fundamentais não tenham mudado, o .NET 9 introduziu aprimoramentos e novos tipos para atender a demandas específicas:​
