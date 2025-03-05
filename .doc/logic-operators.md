@@ -205,6 +205,7 @@ else
 ✔ O alarme será disparado se uma porta ou janela estiver aberta E o alarme estiver ativado.<br />
 
 📌 **Conclusão** <br />
+
 ✅ Os operadores lógicos combinam expressões booleanas (true ou false). <br />
 ✅ && (E) → Retorna true se ambas as condições forem verdadeiras. <br />
 ✅ || (OU) → Retorna true se pelo menos uma condição for verdadeira. <br />
