@@ -1,5 +1,3 @@
-[Back to README](../README.md)
-
 ## Documentação Completa sobre Variáveis no C#
 
 1️⃣ **O que é uma variável?**<br />
@@ -178,10 +176,8 @@ Apresentar("Lucas", 25);
 ✅ **Existem variáveis de valor** (*int*, *double*) e **referência** (*string*, *object*). <br />
 ✅ **Devemos seguir boas práticas de nomeação e escopo**. <br />
 
-
-
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-  <a href="arithmetic-operators.md">Próxima: Operadores Aritiméticos .NET</a>
+   <a href="data-types.md">Voltar: Principais Tipos de Dados no C#</a>
+  <a href="arithmetic-operators.md">Avançar: Documentação Completa sobre Operadores Aritméticos no C#</a>
 </div>
-

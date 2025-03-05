@@ -1,5 +1,3 @@
-[Back to README](../README.md)
-
 ## Principais Tipos de Dados no .NET:
 Os principais tipos de dados do C# são fundamentais para o desenvolvimento de aplicações, permitindo a escolha do tipo adequado para armazenar cada tipo de informação de forma eficiente.
 
@@ -85,6 +83,7 @@ Para uma compreensão mais aprofundada, recomendo consultar a documentação ofi
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-  <a href="arithmetic-operators.md">Próxima: Operadores Aritiméticos .NET</a>
+   <a href="../README.md">Voltar: Fundamentos do C#</a>
+  <a href="variables.md">Avançar: Documentação Completa sobre Variáveis no C#</a>
 </div>
 
