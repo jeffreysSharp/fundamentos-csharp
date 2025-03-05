@@ -219,6 +219,4 @@ else
 </div>
 
 
-Documentação Completa sobre o Operador Ternário (?:) no C#
-
 
