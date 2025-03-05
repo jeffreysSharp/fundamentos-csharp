@@ -214,10 +214,11 @@ else
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-   <a href="relational-operators.md">Voltar: Documentação Completa sobre Operadores Relacionais no C#</a>  
+   <a href="relational-operators.md">Voltar: Documentação Completa sobre Operadores Relacionais no C#</a><br />  
+   <a href="ternary-operator.md">Avançar: Documentação Completa sobre o Operador Ternário (?:) no C#</a>  
 </div>
 
 
-
+Documentação Completa sobre o Operador Ternário (?:) no C#
 
 
