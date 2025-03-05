@@ -60,15 +60,9 @@ Projetado para cálculos financeiros e monetários, pois **evita erros de arredo
 - Use double para cálculos gerais com casas decimais.
 - Use decimal para cálculos financeiros que exigem alta precisão.
 
-
-
 - **Outros:**
-| Tipo C# | Valor  |
-|--------|--------|
-|bool| verdadeiro ou falso|
-|char| 16 bits, caractere Unicode|
-|struct| estrutura definida pelo usuário|
-|enum| enumeração|
+
+
   
 **Tipos de Referência:** 
 Armazenam referências a dados e incluem:​

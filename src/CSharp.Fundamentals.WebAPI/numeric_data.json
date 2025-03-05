@@ -1,0 +1,16 @@
+[
+  {
+    "Id": "fe72394a-aab3-4cc2-9d14-46eea5b97721",
+    "SmallValue": 25,
+    "ByteValue": 200,
+    "ShortValue": 2024,
+    "UShortValue": 120,
+    "IntValue": 1500000,
+    "UIntValue": 300000,
+    "LongValue": 1000000000000,
+    "ULongValue": 900000000000000,
+    "FloatValue": 36.6,
+    "DoubleValue": 3.14159265359,
+    "DecimalValue": 99.99
+  }
+]
