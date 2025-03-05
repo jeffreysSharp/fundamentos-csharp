@@ -141,7 +141,7 @@ else
 | ?:               | Operador Ternário            | Avalia uma condição e retorna um dos dois valores                          | (idade >= 18) ? "Maior" : "Menor"        |   "Maior" ou "Menor"  |  
 
 
-📌 **Conclusão**
+📌 **Conclusão**<br />
 ✅ O operador ternário (?:) é uma alternativa compacta ao if-else.<br />
 ✅ Permite expressões condicionais curtas e diretas.<br />
 ✅ Melhora a legibilidade em atribuições simples.<br />
