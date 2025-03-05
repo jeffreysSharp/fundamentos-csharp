@@ -28,6 +28,8 @@ builder.Services.AddSingleton<IProductRepository, JsonProductRepository>();
 builder.Services.AddSingleton<IInvestmentRepository, JsonInvestmentRepository>();
 builder.Services.AddSingleton<INumericDataRepository, JsonNumericDataRepository>();
 builder.Services.AddSingleton<IRelationalRepository, JsonRelationalRepository>();
+builder.Services.AddSingleton<IArithmeticRepository, JsonArithmeticRepository>();
+
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<InvestmentService>();
 builder.Services.AddScoped<InvestmentCalculatorService>();
