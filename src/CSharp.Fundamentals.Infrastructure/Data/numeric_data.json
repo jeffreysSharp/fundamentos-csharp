@@ -1,0 +1,30 @@
+[
+  {
+    "Id": "82275635-ac6e-4014-9c28-e74426372238",
+    "SmallValue": 25,
+    "ByteValue": 200,
+    "ShortValue": 2024,
+    "UShortValue": 120,
+    "IntValue": 1500000,
+    "UIntValue": 300000,
+    "LongValue": 1000000000000,
+    "ULongValue": 900000000000000,
+    "FloatValue": 36.6,
+    "DoubleValue": 3.14159265359,
+    "DecimalValue": 99.99
+  },
+  {
+    "Id": "69e52743-d824-4623-a7f0-b7d1292b880c",
+    "SmallValue": 25,
+    "ByteValue": 200,
+    "ShortValue": 2024,
+    "UShortValue": 120,
+    "IntValue": 1500000,
+    "UIntValue": 300000,
+    "LongValue": 1000000000000,
+    "ULongValue": 900000000000000,
+    "FloatValue": 36.6,
+    "DoubleValue": 3.14159265359,
+    "DecimalValue": 99.99
+  }
+]

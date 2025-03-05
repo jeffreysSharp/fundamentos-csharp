@@ -6,11 +6,19 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
 {
     public class JsonProductRepository : IProductRepository
     {
-        private const string FilePath = "products.json";
+        private readonly string _filePath;
         private List<Product> _products;
 
         public JsonProductRepository()
         {
+            string solutionDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName ?? "";
+
+            string basePath = Path.Combine(solutionDirectory, "fundamentos-csharp\\src\\CSharp.Fundamentals.Infrastructure", "Data");
+            _filePath = Path.Combine(basePath, "products.json");
+
+            if (!Directory.Exists(basePath))
+                Directory.CreateDirectory(basePath);
+
             _products = LoadProductsFromFile();
         }
 
@@ -42,17 +50,17 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
 
         private List<Product> LoadProductsFromFile()
         {
-            if (!File.Exists(FilePath))
+            if (!File.Exists(_filePath))
                 return new List<Product>();
 
-            var json = File.ReadAllText(FilePath);
+            var json = File.ReadAllText(_filePath);
             return JsonSerializer.Deserialize<List<Product>>(json) ?? new List<Product>();
         }
 
         private void SaveProductsToFile()
         {
             var json = JsonSerializer.Serialize(_products, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(FilePath, json);
+            File.WriteAllText(_filePath, json);
         }
     }
 }

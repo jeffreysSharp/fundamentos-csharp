@@ -1,0 +1,16 @@
+[
+  {
+    "Id": "bf161820-b525-4376-8b35-0593e3abd60a",
+    "FirstNumber": 10,
+    "SecondNumber": 3,
+    "Sum": 13,
+    "Subtraction": 7,
+    "Multiplication": 30,
+    "Division": 3.3333333333333335,
+    "Modulo": 1,
+    "IncrementFirst": 11,
+    "IncrementSecond": 4,
+    "DecrementFirst": 9,
+    "DecrementSecond": 2
+  }
+]
