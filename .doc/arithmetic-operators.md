@@ -189,7 +189,7 @@ Console.WriteLine("Feliz Ano Novo!");
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-   <a href="variables.md">Voltar: Documentação Completa sobre Variáveis no C#</a>  
+   <a href="variables.md">Voltar: Documentação Completa sobre Variáveis no C#</a><br />  
    <a href="relational-operators.md">Avançar:  Documentação Completa sobre Operadores Relacionais no C#</a>  
 </div>
 

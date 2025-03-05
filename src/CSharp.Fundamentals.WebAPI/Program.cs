@@ -27,12 +27,15 @@ builder.Services.AddSwaggerGen(
 builder.Services.AddSingleton<IProductRepository, JsonProductRepository>();
 builder.Services.AddSingleton<IInvestmentRepository, JsonInvestmentRepository>();
 builder.Services.AddSingleton<INumericDataRepository, JsonNumericDataRepository>();
+builder.Services.AddSingleton<IRelationalRepository, JsonRelationalRepository>();
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<InvestmentService>();
 builder.Services.AddScoped<InvestmentCalculatorService>();
 builder.Services.AddScoped<NumericDataService>();
 builder.Services.AddScoped<NumericCalculatorService>();
 builder.Services.AddScoped<ArithmeticService>();
+builder.Services.AddScoped<RelationalService>();
+
 
 
 var app = builder.Build();
