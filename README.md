@@ -168,14 +168,14 @@ No Visual Studio, a solução é representada por um arquivo com a extensão *.s
 📌 Solução .NET – Agrupa vários projetos relacionados, permitindo gerenciar o desenvolvimento de um sistema complexo.<br />
 
 **Exemplo:**<br />
-Uma aplicação de corretora de investimentos pode ter a seguinte estrutura:<br />
+Essa aplicação de exemplo tem a seguinte estrutura:<br />
 
-📂 Corretora.Investimentos.sln (Solução)<br />
-├── 📂 Corretora.Investimentos.API (Projeto de API)<br />
-├── 📂 Corretora.Investimentos.Infra (Projeto de Infraestrutura e Banco de Dados)<br />
-├── 📂 Corretora.Investimentos.Domain (Projeto de Regras de Negócio – DDD)<br />
-├── 📂 Corretora.Investimentos.Application (Projeto de Serviços e Aplicação)<br />
-├── 📂 Corretora.Investimentos.Tests (Projeto de Testes)<br />
+📂 CSharp.Fundamentals.sln (Solução)<br />
+├── 📂 CSharp.Fundamentals.API (Projeto de API)<br />
+├── 📂 CSharp.Fundamentals.Infra (Projeto de Infraestrutura e Banco de Dados)<br />
+├── 📂 CSharp.Fundamentals.Domain (Projeto de Regras de Negócio – DDD)<br />
+├── 📂 CSharp.Fundamentals.Application (Projeto de Serviços e Aplicação)<br />
+├── 📂 CSharp.Fundamentals.Tests (Projeto de Testes)<br />
 
 Cada um desses projetos tem uma função específica, e a solução facilita o gerenciamento de todos eles.
 
