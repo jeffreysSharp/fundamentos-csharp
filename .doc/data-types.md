@@ -150,6 +150,6 @@ Fizemos um breve overview sobre esses tipos de dados para que você tenha uma no
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-  <a href="variables.md">Próxima: Operadores Aritiméticos .NET</a>
+  <a href="variables.md">Próxima: Trabalhando com variáveis</a>
 </div>
 

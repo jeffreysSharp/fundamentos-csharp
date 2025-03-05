@@ -2,7 +2,7 @@
 
 ## Documentação Completa sobre Variáveis no C#
 
-1️⃣ **O que é uma variável?**
+1️⃣ **O que é uma variável?**<br />
 Uma variável é um espaço na memória do computador utilizado para armazenar valores que podem ser alterados durante a execução do programa.
 
 ✅ **Características das Variáveis**<br />
@@ -29,11 +29,12 @@ bool ativo = true;     // Armazena um valor verdadeiro ou falso
 
 3️⃣ **Regras de Nomeação de Variáveis** <br />
 O C# segue algumas regras para nomear variáveis corretamente: <br />
-✔** Deve começar com uma letra** (não pode começar com número). <br />
+✔ **Deve começar com uma letra** (não pode começar com número). <br />
 ✔ Pode conter letras, números e *_* (underline). <br />
 ✔ **Não pode conter espaços**. <br />
 ✔ **Não pode usar palavras reservadas do C#** (exemplo: *int*, *class*, *return*). <br />
 ✔ Seguir convenções de nomenclatura (camelCase para variáveis). <br />
+
 ✅ Exemplos de Nome Válidos<br />
 
 ```
@@ -137,10 +138,10 @@ class Config
 O escopo define **onde a variável pode ser acessada**.
 | Tipo     | Visível em                                    | Exemplo                          |
 |----------|-----------------------------------------------|----------------------------------|
-|Local 	     Dentro de um método	                         | void Exemplo() { int x = 10; }   |
-|Global	     Dentro de uma classe	                         | class Teste { int valor; }       |
-|Parâmetro	 Apenas dentro do método que o recebe	         | void Metodo(int x) { }           |
-|Bloco	     Apenas dentro do bloco { } onde foi declarada | if (true) { int y = 20; }        |
+|Local 	   |  Dentro de um método	                         | void Exemplo() { int x = 10; }   |
+|Global	   |  Dentro de uma classe	                       | class Teste { int valor; }       |
+|Parâmetro |  Apenas dentro do método que o recebe	       | void Metodo(int x) { }           |
+|Bloco	   |  Apenas dentro do bloco { } onde foi declarada| if (true) { int y = 20; }        |
 
 7️⃣ **Exemplos Práticos** <br />
 📌 **Exemplo: Trabalhando com Variáveis** <br />
