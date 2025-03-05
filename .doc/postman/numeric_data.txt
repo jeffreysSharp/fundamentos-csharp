@@ -1,0 +1,13 @@
+{
+  "smallValue": 25,
+  "byteValue": 200,
+  "shortValue": 2024,
+  "uShortValue": 120,
+  "intValue": 1500000,
+  "uIntValue": 300000,
+  "longValue": 1000000000000,
+  "uLongValue": 900000000000000,
+  "floatValue": 36.6,
+  "doubleValue": 3.14159265359,
+  "decimalValue": 99.99
+}

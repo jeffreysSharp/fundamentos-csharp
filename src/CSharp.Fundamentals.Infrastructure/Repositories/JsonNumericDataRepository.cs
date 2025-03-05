@@ -6,11 +6,19 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
 {
     public class JsonNumericDataRepository : INumericDataRepository
     {
-        private const string FilePath = "numeric_data.json";
+        private readonly string _filePath;
         private List<NumericDataExample> _dataList;
 
         public JsonNumericDataRepository()
         {
+            string solutionDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName ?? "";
+
+            string basePath = Path.Combine(solutionDirectory, "fundamentos-csharp\\src\\CSharp.Fundamentals.Infrastructure", "Data");
+            _filePath = Path.Combine(basePath, "numeric_data.json");
+
+            if (!Directory.Exists(basePath))
+                Directory.CreateDirectory(basePath);
+
             _dataList = LoadFromFile();
         }
 
@@ -26,17 +34,17 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
 
         private List<NumericDataExample> LoadFromFile()
         {
-            if (!File.Exists(FilePath))
+            if (!File.Exists(_filePath))
                 return new List<NumericDataExample>();
 
-            var json = File.ReadAllText(FilePath);
+            var json = File.ReadAllText(_filePath);
             return JsonSerializer.Deserialize<List<NumericDataExample>>(json) ?? new List<NumericDataExample>();
         }
 
         private void SaveToFile()
         {
             var json = JsonSerializer.Serialize(_dataList, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(FilePath, json);
+            File.WriteAllText(_filePath, json);
         }
     }
 }
