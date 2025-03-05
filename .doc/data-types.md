@@ -83,7 +83,7 @@ Para uma compreensão mais aprofundada, recomendo consultar a documentação ofi
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-   <a href="../README.md">Voltar: Fundamentos do C#</a>
+   <a href="../README.md">Voltar: Fundamentos do C#</a><br />
   <a href="variables.md">Avançar: Documentação Completa sobre Variáveis no C#</a>
 </div>
 
