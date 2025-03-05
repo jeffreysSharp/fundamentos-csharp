@@ -6,37 +6,37 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ArithmeticController : ControllerBase
+    public class TernaryController : ControllerBase
     {
-        private readonly ArithmeticService _arithmeticService;
+        private readonly TernaryService _ternaryService;
 
-        public ArithmeticController(ArithmeticService arithmeticService)
+        public TernaryController(TernaryService ternaryService)
         {
-            _arithmeticService = arithmeticService;
+            _ternaryService = ternaryService;
         }
 
         [HttpPost]
-        public IActionResult PerformOperations([FromBody] ArithmeticRequest request)
+        public IActionResult EvaluateTernaryExpression([FromBody] TernaryRequest request)
         {
-            var operation = _arithmeticService.PerformOperations(request.FirstNumber, request.SecondNumber);
+            var operation = _ternaryService.EvaluateTernaryExpression(request.Value);
             return CreatedAtAction(nameof(GetOperationById), new { id = operation.Id }, operation);
         }
 
         [HttpGet]
         public IActionResult GetAllOperations()
         {
-            var operations = _arithmeticService.GetAllOperations();
+            var operations = _ternaryService.GetAllOperations();
             return Ok(operations);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetOperationById(Guid id)
         {
-            var operation = _arithmeticService.GetOperationById(id);
+            var operation = _ternaryService.GetOperationById(id);
             if (operation == null) return NotFound();
             return Ok(operation);
         }
     }
 
-    public record ArithmeticRequest(double FirstNumber, double SecondNumber);
+    public record TernaryRequest(int Value);
 }

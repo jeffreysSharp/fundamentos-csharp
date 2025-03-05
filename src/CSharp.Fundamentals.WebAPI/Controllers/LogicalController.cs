@@ -6,37 +6,37 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ArithmeticController : ControllerBase
+    public class LogicalController : ControllerBase
     {
-        private readonly ArithmeticService _arithmeticService;
+        private readonly LogicalService _logicalService;
 
-        public ArithmeticController(ArithmeticService arithmeticService)
+        public LogicalController(LogicalService logicalService)
         {
-            _arithmeticService = arithmeticService;
+            _logicalService = logicalService;
         }
 
         [HttpPost]
-        public IActionResult PerformOperations([FromBody] ArithmeticRequest request)
+        public IActionResult PerformLogicalOperations([FromBody] LogicalRequest request)
         {
-            var operation = _arithmeticService.PerformOperations(request.FirstNumber, request.SecondNumber);
+            var operation = _logicalService.PerformLogicalOperations(request.FirstCondition, request.SecondCondition);
             return CreatedAtAction(nameof(GetOperationById), new { id = operation.Id }, operation);
         }
 
         [HttpGet]
         public IActionResult GetAllOperations()
         {
-            var operations = _arithmeticService.GetAllOperations();
+            var operations = _logicalService.GetAllOperations();
             return Ok(operations);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetOperationById(Guid id)
         {
-            var operation = _arithmeticService.GetOperationById(id);
+            var operation = _logicalService.GetOperationById(id);
             if (operation == null) return NotFound();
             return Ok(operation);
         }
     }
 
-    public record ArithmeticRequest(double FirstNumber, double SecondNumber);
+    public record LogicalRequest(bool FirstCondition, bool SecondCondition);
 }

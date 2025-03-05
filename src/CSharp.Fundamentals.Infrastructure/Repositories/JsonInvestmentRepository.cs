@@ -6,11 +6,19 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
 {
     public class JsonInvestmentRepository : IInvestmentRepository
     {
-        private const string FilePath = "investments.json";
+        private readonly string _filePath;
         private List<Investment> _investments;
 
         public JsonInvestmentRepository()
         {
+            string solutionDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName ?? "";
+
+            string basePath = Path.Combine(solutionDirectory, "fundamentos-csharp\\src\\CSharp.Fundamentals.Infrastructure", "Data");
+            _filePath = Path.Combine(basePath, "investment.json");
+
+            if (!Directory.Exists(basePath))
+                Directory.CreateDirectory(basePath);
+
             _investments = LoadInvestmentsFromFile();
         }
 
@@ -26,17 +34,17 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
 
         private List<Investment> LoadInvestmentsFromFile()
         {
-            if (!File.Exists(FilePath))
+            if (!File.Exists(_filePath))
                 return new List<Investment>();
 
-            var json = File.ReadAllText(FilePath);
+            var json = File.ReadAllText(_filePath);
             return JsonSerializer.Deserialize<List<Investment>>(json) ?? new List<Investment>();
         }
 
         private void SaveInvestmentsToFile()
         {
             var json = JsonSerializer.Serialize(_investments, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(FilePath, json);
+            File.WriteAllText(_filePath, json);
         }
     }
 }

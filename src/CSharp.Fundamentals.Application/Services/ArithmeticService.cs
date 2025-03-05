@@ -1,14 +1,26 @@
-﻿namespace CSharp.Fundamentals.Application.Services
+﻿using CSharp.Fundamentals.Domain.Entities;
+using CSharp.Fundamentals.Domain.Repositories;
+
+namespace CSharp.Fundamentals.Application.Services
 {
     public class ArithmeticService
     {
-        public int Add(int a, int b) => a + b;
-        public int Subtract(int a, int b) => a - b;
-        public int Multiply(int a, int b) => a * b;
-        public double Divide(double a, double b) => b == 0 ? throw new DivideByZeroException("Cannot divide by zero") : a / b;
-        public int Modulus(int a, int b) => a % b;
+        private readonly IArithmeticRepository _repository;
 
-        public int Increment(ref int value) => ++value;
-        public int Decrement(ref int value) => --value;
+        public ArithmeticService(IArithmeticRepository repository)
+        {
+            _repository = repository;
+        }
+
+        public ArithmeticOperation PerformOperations(double firstNumber, double secondNumber)
+        {
+            var operation = new ArithmeticOperation(firstNumber, secondNumber);
+            _repository.Add(operation);
+            return operation;
+        }
+
+        public IEnumerable<ArithmeticOperation> GetAllOperations() => _repository.GetAll();
+
+        public ArithmeticOperation? GetOperationById(Guid id) => _repository.GetById(id);
     }
 }
