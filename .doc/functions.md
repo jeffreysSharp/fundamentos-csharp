@@ -45,7 +45,7 @@ public double CalcularDesconto(double valor, double porcentagem)
 
 🔹 **Função sem retorno**(void não retorna nada, apenas executa ações):<br />
 
-📌 **2.2. Funções com Diferentes Modificadores de Acesso**
+📌 **2.2. Funções com Diferentes Modificadores de Acesso**<br />
 Os modificadores de acesso determinam **quem pode chamar a função**.<br />
 
 | Modificador         | Descrição                                                                   |
@@ -86,7 +86,7 @@ int resultado = MinhaClasse.Multiplicar(5, 3);
 ```
 
 📌 **2.4. Funções Assíncronas (async)** <br/>
-C# permite a criação de funções assíncronas, que são úteis para operações que podem levar tempo (como chamadas de API ou acesso a banco de dados).<br />
+O C# permite a criação de funções assíncronas, que são úteis para operações que podem levar tempo (como chamadas de API ou acesso a banco de dados).<br />
 
 📌 **Exemplo de uma função assíncrona (async e await):**<br />
 ```
@@ -105,7 +105,7 @@ Console.WriteLine(resultado);
 ```
 
 📌 **2.5. Funções Anônimas (Lambda e Delegates)** <br />
-C# permite criar **funções anônimas** sem precisar definir um método explicitamente.<br />
+O C# permite criar **funções anônimas** sem precisar definir um método explicitamente.<br />
 
 🔹 **Exemplo de função anônima com delegate:** <br/>
 ```
@@ -139,7 +139,7 @@ Console.WriteLine(Somar(1, 2, 3));   // Usa a versão com 3 parâmetros
 
 3️⃣ **Passagem de Parâmetros em Funções**<br />
 
-C# permite diferentes formas de passar parâmetros para funções.
+O C# permite diferentes formas de passar parâmetros para funções.
 
 📌 **3.1. Parâmetros Opcionais**<br />
 Os parâmetros opcionais permitem definir valores padrão, caso não sejam informados na chamada.
@@ -203,7 +203,7 @@ Console.WriteLine(resultado); // Saída: Número aleatório
 ✅ Funções são métodos definidos dentro de classes para modularizar o código.<br />
 ✅ Podem ser públicas, privadas, estáticas, assíncronas e anônimas.<br />
 ✅ Suportam parâmetros opcionais, nomeados e passados por referência.<br />
-✅ C# permite sobrecarga de funções e uso de async/await para programação assíncrona.<br />
+✅ O C# permite sobrecarga de funções e uso de async/await para programação assíncrona.<br />
 
 
 <br/>
