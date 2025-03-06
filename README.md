@@ -29,10 +29,12 @@ Essa aplicação de exemplo tem a seguinte estrutura:<br />
 1. <a href=".doc/fundamentals.md">Fundamentos do C#</a>
 2. <a href=".doc/data-types.md">Documentação Completa dos Principais Tipos de Dados no C#</a>
 3. <a href=".doc/variables.md">Documentação Completa sobre Variáveis no C#</a>
-4. <a href=".doc/arithmetic-operators.md">Documentação Completa sobre Operadores Aritméticos no C#</a>
-5. <a href=".doc/relational-operators.md">Documentação Completa sobre Operadores Relacionais no C#</a>
-6. <a href=".doc/logic-operators.md">Documentação Completa sobre Operadores Lógicos no C#</a>
-7. <a href=".doc/ternary-operator.md">Documentação Completa sobre o Operador Ternário (?:) no C#</a>
+4. <a href=".doc/arithmetic-operator.md">Documentação Completa sobre Operadores Aritméticos no C#</a>
+5. <a href=".doc/relational-operator.md">Documentação Completa sobre Operadores Relacionais no C#</a>
+6. <a href=".doc/logic-operator.md">Documentação Completa sobre Operadores Lógicos no C#</a>
+7. <a href=".doc/ternary-operato.md">Documentação Completa sobre o Operador Ternário (?:) no C#</a>
+8. <a href=".doc/functions.md">Documentação Completa sobre Funções no .NET (C#)</a>
+
 
 
 

@@ -150,6 +150,7 @@ else
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="logic-operators.md">Voltar: Documentação Completa sobre Operadores Lógicos no C#</a>  
+     <a href="functions.md">Avançar: Documentação Completa sobre Funções no .NET (C#)</a>  
 </div>
 
 
