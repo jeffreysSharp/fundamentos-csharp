@@ -1,6 +1,6 @@
 ﻿namespace CSharp.Fundamentals.Domain.Entities
 {
-    public class NumericData
+    public class NumericalData
     {
         public Guid Id { get; private set; }
         public sbyte SmallValue { get; private set; }
@@ -15,7 +15,7 @@
         public double DoubleValue { get; private set; }
         public decimal DecimalValue { get; private set; }
 
-        public NumericData(sbyte smallValue, byte byteValue, short shortValue, ushort ushortValue, int intValue, uint uintValue, long longValue, ulong ulongValue, float floatValue, double doubleValue, decimal decimalValue)
+        public NumericalData(sbyte smallValue, byte byteValue, short shortValue, ushort ushortValue, int intValue, uint uintValue, long longValue, ulong ulongValue, float floatValue, double doubleValue, decimal decimalValue)
         {
             Id = Guid.NewGuid();
             SmallValue = smallValue;

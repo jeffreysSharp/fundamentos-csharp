@@ -1,6 +1,6 @@
 ﻿namespace CSharp.Fundamentals.Application.DTOs
 {
-    public class NumericDataDto
+    public class NumericalDataDto
     {
         public Guid Id { get; set; }
         public sbyte SmallValue { get; set; }

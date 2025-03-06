@@ -13,7 +13,7 @@ namespace CSharp.Fundamentals.Infrastructure
             services.AddAutoMapper(typeof(MappingProfile));
 
             services.AddSingleton<IInvestmentRepository, JsonInvestmentRepository>();
-            services.AddSingleton<INumericDataRepository, JsonNumericDataRepository>();
+            services.AddSingleton<INumericalDataRepository, JsonNumericalDataRepository>();
             services.AddSingleton<IRelationalRepository, JsonRelationalOperationRepository>();
             services.AddSingleton<ILogicalOperationRepository, JsonLogicalOperationRepository>();
             services.AddSingleton<ITernaryRepository, JsonTernaryOperationRepository>();
@@ -22,7 +22,7 @@ namespace CSharp.Fundamentals.Infrastructure
 
             services.AddScoped<InvestmentService>();
             services.AddScoped<InvestmentCalculatorService>();
-            services.AddScoped<NumericDataService>();
+            services.AddScoped<NumericalDataService>();
             services.AddScoped<NumericCalculatorService>();
             services.AddScoped<ArithmeticOperationService>();
             services.AddScoped<RelationalOperationService>();

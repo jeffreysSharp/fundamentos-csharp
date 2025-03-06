@@ -5,11 +5,11 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class NumericDataController : ControllerBase
+    public class NumericalDataController : ControllerBase
     {
-        private readonly NumericDataService _numericDataService;
+        private readonly NumericalDataService _numericDataService;
 
-        public NumericDataController(NumericDataService numericDataService)
+        public NumericalDataController(NumericalDataService numericDataService)
         {
             _numericDataService = numericDataService;
         }

@@ -1,6 +1,4 @@
-﻿using AutoMapper;
-using CSharp.Fundamentals.Application.DTOs;
-using CSharp.Fundamentals.Application.Services;
+﻿using CSharp.Fundamentals.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CSharp.Fundamentals.WebAPI.Controllers
