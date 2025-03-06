@@ -2,9 +2,10 @@
 
 namespace CSharp.Fundamentals.Domain.Repositories
 {
-    public interface IFunctionRepository
+    public interface IFunctionRepository : IJsonRepository<Function>
     {
         void Add(Function function);
         IEnumerable<Function> GetAll();
+        Function? GetById(Guid id);
     }
 }
