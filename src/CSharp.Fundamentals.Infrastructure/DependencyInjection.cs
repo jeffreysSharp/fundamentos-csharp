@@ -23,6 +23,7 @@ namespace CSharp.Fundamentals.Infrastructure
             services.AddScoped<ProductService>();
             services.AddScoped<InvestmentService>();
             services.AddScoped<InvestmentCalculatorService>();
+            services.AddScoped<NumericDataService>();
             services.AddScoped<NumericCalculatorService>();
             services.AddScoped<ArithmeticService>();
             services.AddScoped<RelationalService>();

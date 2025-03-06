@@ -9,9 +9,9 @@ namespace CSharp.Fundamentals.Application.Services
         public float DivideFloat(float a, float b) => b == 0 ? float.NaN : a / b;
         public ulong AddUlong(ulong a, ulong b) => a + b;
 
-        public NumericDataExample PerformCalculations(NumericDataExample data)
+        public NumericData PerformCalculations(NumericData data)
         {
-            return new NumericDataExample(
+            return new NumericData(
                 (sbyte)(data.SmallValue + 1),
                 (byte)(data.ByteValue + 2),
                 (short)(data.ShortValue * 2),

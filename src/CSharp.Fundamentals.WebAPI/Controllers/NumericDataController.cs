@@ -1,5 +1,4 @@
 ﻿using CSharp.Fundamentals.Application.Services;
-using CSharp.Fundamentals.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CSharp.Fundamentals.WebAPI.Controllers
@@ -16,32 +15,41 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult RegisterNumericData([FromBody] NumericDataExample data)
+        public IActionResult RegisterNumericData([FromBody] NumericDataRequest request)
         {
-            var savedData = _numericDataService.RegisterNumericData(data);
-            return CreatedAtAction(nameof(GetNumericDataById), new { id = savedData.Id }, savedData);
+            var numericData = _numericDataService.RegisterNumericData(request.smallValue, request.byteValue, request.shortValue,
+            request.ushortValue, request.intValue, request.uintValue, request.longValue,
+            request.ulongValue, request.floatValue, request.doubleValue, request.decimalValue);
+
+            return CreatedAtAction(nameof(GetNumericDataById), new { id = numericData.Id }, numericData);
         }
 
         [HttpGet]
         public IActionResult GetAllNumericData()
         {
-            var dataList = _numericDataService.GetAllNumericData();
-            return Ok(dataList);
+            var numericDatas = _numericDataService.GetAllNumericData();
+            return Ok(numericDatas);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetNumericDataById(Guid id)
         {
-            var data = _numericDataService.GetNumericDataById(id);
-            if (data == null) return NotFound();
-            return Ok(data);
+            var numericData = _numericDataService.GetNumericDataById(id);
+            if (numericData == null) return NotFound();
+
+            return Ok(numericData);
         }
 
         [HttpGet("{id}/calculate")]
         public IActionResult PerformCalculations(Guid id)
         {
             var updatedData = _numericDataService.PerformCalculations(id);
+
             return updatedData != null ? Ok(updatedData) : NotFound();
         }
+
+        public record NumericDataRequest(sbyte smallValue, byte byteValue, short shortValue,
+            ushort ushortValue, int intValue, uint uintValue, long longValue,
+            ulong ulongValue, float floatValue, double doubleValue, decimal decimalValue);
     }
 }
