@@ -1,54 +1,71 @@
-﻿using System.Text.Json;
-using CSharp.Fundamentals.Domain.Entities;
+﻿using CSharp.Fundamentals.Domain.Entities;
 using CSharp.Fundamentals.Domain.Repositories;
 
 namespace CSharp.Fundamentals.Infrastructure.Repositories
 {
-    public class JsonArithmeticOperationRepository : IArithmeticRepository
+    public class JsonArithmeticOperationRepository : JsonRepository<ArithmeticOperation>, IArithmeticRepository
     {
-        private readonly string _filePath;
-        private List<ArithmeticOperation> _operations;
+        public JsonArithmeticOperationRepository() : base("arithmetic_operation.json") { }
 
-        public JsonArithmeticOperationRepository()
+        public ArithmeticOperation? GetById(Guid id)
         {
-            string solutionDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName ?? "";
-
-            string basePath = Path.Combine(solutionDirectory, "fundamentos-csharp\\src\\CSharp.Fundamentals.Infrastructure", "Data");
-            _filePath = Path.Combine(basePath, "arithmetic_operation.json");
-
-            if (!Directory.Exists(basePath))
-                Directory.CreateDirectory(basePath);
-
-
-            if (!Directory.Exists(basePath))
-                Directory.CreateDirectory(basePath);
-
-            _operations = LoadFromFile();
-        }
-
-        public void Add(ArithmeticOperation operation)
-        {
-            _operations.Add(operation);
-            SaveToFile();
-        }
-
-        public IEnumerable<ArithmeticOperation> GetAll() => _operations;
-
-        public ArithmeticOperation? GetById(Guid id) => _operations.FirstOrDefault(o => o.Id == id);
-
-        private List<ArithmeticOperation> LoadFromFile()
-        {
-            if (!File.Exists(_filePath))
-                return new List<ArithmeticOperation>();
-
-            var json = File.ReadAllText(_filePath);
-            return JsonSerializer.Deserialize<List<ArithmeticOperation>>(json) ?? new List<ArithmeticOperation>();
-        }
-
-        private void SaveToFile()
-        {
-            var json = JsonSerializer.Serialize(_operations, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(_filePath, json);
+            return GetById(operation => operation.Id == id);
         }
     }
 }
+
+
+//using System.Text.Json;
+//using CSharp.Fundamentals.Domain.Entities;
+//using CSharp.Fundamentals.Domain.Repositories;
+
+//namespace CSharp.Fundamentals.Infrastructure.Repositories
+//{
+//    public class JsonArithmeticOperationRepository : IArithmeticRepository
+//    {
+//        private readonly string _filePath;
+//        private List<ArithmeticOperation> _operations;
+
+//        public JsonArithmeticOperationRepository()
+//        {
+//            string solutionDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName ?? "";
+
+//            string basePath = Path.Combine(solutionDirectory, "fundamentos-csharp\\src\\CSharp.Fundamentals.Infrastructure", "Data");
+//            _filePath = Path.Combine(basePath, "arithmetic_operation.json");
+
+//            if (!Directory.Exists(basePath))
+//                Directory.CreateDirectory(basePath);
+
+
+//            if (!Directory.Exists(basePath))
+//                Directory.CreateDirectory(basePath);
+
+//            _operations = LoadFromFile();
+//        }
+
+//        public void Add(ArithmeticOperation operation)
+//        {
+//            _operations.Add(operation);
+//            SaveToFile();
+//        }
+
+//        public IEnumerable<ArithmeticOperation> GetAll() => _operations;
+
+//        public ArithmeticOperation? GetById(Guid id) => _operations.FirstOrDefault(o => o.Id == id);
+
+//        private List<ArithmeticOperation> LoadFromFile()
+//        {
+//            if (!File.Exists(_filePath))
+//                return new List<ArithmeticOperation>();
+
+//            var json = File.ReadAllText(_filePath);
+//            return JsonSerializer.Deserialize<List<ArithmeticOperation>>(json) ?? new List<ArithmeticOperation>();
+//        }
+
+//        private void SaveToFile()
+//        {
+//            var json = JsonSerializer.Serialize(_operations, new JsonSerializerOptions { WriteIndented = true });
+//            File.WriteAllText(_filePath, json);
+//        }
+//    }
+//}

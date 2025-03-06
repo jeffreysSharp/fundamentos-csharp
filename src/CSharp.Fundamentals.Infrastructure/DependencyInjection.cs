@@ -18,6 +18,7 @@ namespace CSharp.Fundamentals.Infrastructure
             services.AddSingleton<ILogicalRepository, JsonLogicalOperationRepository>();
             services.AddSingleton<ITernaryRepository, JsonTernaryOperationRepository>();
             services.AddSingleton<IArithmeticRepository, JsonArithmeticOperationRepository>();
+            services.AddSingleton<IFunctionRepository, JsonFunctionRepository>();
 
             services.AddScoped<InvestmentService>();
             services.AddScoped<InvestmentCalculatorService>();
@@ -27,6 +28,7 @@ namespace CSharp.Fundamentals.Infrastructure
             services.AddScoped<RelationalOperationService>();
             services.AddScoped<LogicalOperationService>();
             services.AddScoped<TernaryOperationService>();
+            services.AddScoped<FunctionService>();
 
             return services;
         }
