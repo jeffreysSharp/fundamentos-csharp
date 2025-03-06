@@ -2,7 +2,7 @@
 
 namespace CSharp.Fundamentals.Domain.Repositories
 {
-    public interface ITernaryRepository
+    public interface ITernaryOperationRepository
     {
         void Add(TernaryOperation operation);
         IEnumerable<TernaryOperation> GetAll();

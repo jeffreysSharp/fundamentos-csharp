@@ -7,10 +7,10 @@ namespace CSharp.Fundamentals.Application.Services
 {
     public class TernaryOperationService
     {
-        private readonly ITernaryRepository _repository;
+        private readonly ITernaryOperationRepository _repository;
         private readonly IMapper _mapper;
 
-        public TernaryOperationService(ITernaryRepository repository, IMapper mapper)
+        public TernaryOperationService(ITernaryOperationRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
