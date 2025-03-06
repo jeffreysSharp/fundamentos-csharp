@@ -1,5 +1,4 @@
 ﻿using CSharp.Fundamentals.Application.Services;
-using CSharp.Fundamentals.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CSharp.Fundamentals.WebAPI.Controllers
