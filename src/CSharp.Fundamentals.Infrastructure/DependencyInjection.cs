@@ -14,7 +14,7 @@ namespace CSharp.Fundamentals.Infrastructure
 
             services.AddSingleton<IInvestmentRepository, JsonInvestmentRepository>();
             services.AddSingleton<INumericalDataRepository, JsonNumericalDataRepository>();
-            services.AddSingleton<IRelationalRepository, JsonRelationalOperationRepository>();
+            services.AddSingleton<IRelationalOperationRepository, JsonRelationalOperationRepository>();
             services.AddSingleton<ILogicalOperationRepository, JsonLogicalOperationRepository>();
             services.AddSingleton<ITernaryRepository, JsonTernaryOperationRepository>();
             services.AddSingleton<IArithmeticRepository, JsonArithmeticOperationRepository>();

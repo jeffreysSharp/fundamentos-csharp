@@ -2,7 +2,7 @@
 
 namespace CSharp.Fundamentals.Domain.Repositories
 {
-    public interface IRelationalRepository
+    public interface IRelationalOperationRepository
     {
         void Add(RelationalOperation operation);
         IEnumerable<RelationalOperation> GetAll();
