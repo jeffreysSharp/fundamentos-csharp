@@ -7,7 +7,7 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
     public class JsonNumericDataRepository : INumericDataRepository
     {
         private readonly string _filePath;
-        private List<NumericDataExample> _dataList;
+        private List<NumericData> _dataList;
 
         public JsonNumericDataRepository()
         {
@@ -22,23 +22,23 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
             _dataList = LoadFromFile();
         }
 
-        public void Add(NumericDataExample data)
+        public void Add(NumericData data)
         {
             _dataList.Add(data);
             SaveToFile();
         }
 
-        public IEnumerable<NumericDataExample> GetAll() => _dataList;
+        public IEnumerable<NumericData> GetAll() => _dataList;
 
-        public NumericDataExample? GetById(Guid id) => _dataList.FirstOrDefault(d => d.Id == id);
+        public NumericData? GetById(Guid id) => _dataList.FirstOrDefault(d => d.Id == id);
 
-        private List<NumericDataExample> LoadFromFile()
+        private List<NumericData> LoadFromFile()
         {
             if (!File.Exists(_filePath))
-                return new List<NumericDataExample>();
+                return new List<NumericData>();
 
             var json = File.ReadAllText(_filePath);
-            return JsonSerializer.Deserialize<List<NumericDataExample>>(json) ?? new List<NumericDataExample>();
+            return JsonSerializer.Deserialize<List<NumericData>>(json) ?? new List<NumericData>();
         }
 
         private void SaveToFile()

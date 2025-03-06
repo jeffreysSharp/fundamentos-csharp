@@ -8,9 +8,9 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
     [Route("api/[controller]")]
     public class RelationalController : ControllerBase
     {
-        private readonly RelationalService _relationalService;
+        private readonly RelationalOperationService _relationalService;
 
-        public RelationalController(RelationalService relationalService)
+        public RelationalController(RelationalOperationService relationalService)
         {
             _relationalService = relationalService;
         }

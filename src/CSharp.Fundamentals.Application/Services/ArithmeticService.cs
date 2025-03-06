@@ -1,26 +1,39 @@
-﻿using CSharp.Fundamentals.Domain.Entities;
+﻿using AutoMapper;
+using CSharp.Fundamentals.Application.DTOs;
+using CSharp.Fundamentals.Domain.Entities;
 using CSharp.Fundamentals.Domain.Repositories;
 
 namespace CSharp.Fundamentals.Application.Services
 {
     public class ArithmeticService
     {
-        private readonly IArithmeticRepository _repository;
+        private readonly IArithmeticRepository _arithmeticRepository;
+        private readonly IMapper _mapper;
 
-        public ArithmeticService(IArithmeticRepository repository)
+        public ArithmeticService(IArithmeticRepository repository, IMapper mapper)
         {
-            _repository = repository;
+            _arithmeticRepository = repository;
+            _mapper = mapper;
         }
 
-        public ArithmeticOperation PerformOperations(double firstNumber, double secondNumber)
+        public ArithmeticOperationDto PerformOperations(double firstNumber, double secondNumber)
         {
             var operation = new ArithmeticOperation(firstNumber, secondNumber);
-            _repository.Add(operation);
-            return operation;
+            _arithmeticRepository.Add(operation);
+            return _mapper.Map<ArithmeticOperationDto>(operation);
         }
 
-        public IEnumerable<ArithmeticOperation> GetAllOperations() => _repository.GetAll();
+        public IEnumerable<ArithmeticOperationDto> GetAllOperations()
+        {
+            var operations = _arithmeticRepository.GetAll();
+            return _mapper.Map<IEnumerable<ArithmeticOperationDto>>(operations);
+        }
 
-        public ArithmeticOperation? GetOperationById(Guid id) => _repository.GetById(id);
+        public ArithmeticOperationDto? GetOperationById(Guid id)
+        {
+            var operation = _arithmeticRepository.GetById(id);
+            return operation != null ? _mapper.Map<ArithmeticOperationDto>(operation) : null;
+        }
+        
     }
 }
