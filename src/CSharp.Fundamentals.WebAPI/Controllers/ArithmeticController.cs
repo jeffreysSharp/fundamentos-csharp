@@ -1,5 +1,4 @@
 ﻿using CSharp.Fundamentals.Application.Services;
-using CSharp.Fundamentals.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CSharp.Fundamentals.WebAPI.Controllers
@@ -18,8 +17,8 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
         [HttpPost]
         public IActionResult PerformOperations([FromBody] ArithmeticRequest request)
         {
-            var operation = _arithmeticService.PerformOperations(request.FirstNumber, request.SecondNumber);
-            return CreatedAtAction(nameof(GetOperationById), new { id = operation.Id }, operation);
+            var result = _arithmeticService.PerformOperations(request.FirstNumber, request.SecondNumber);
+            return CreatedAtAction(nameof(GetOperationById), new { id = result }, result);
         }
 
         [HttpGet]

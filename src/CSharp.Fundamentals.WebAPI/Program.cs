@@ -1,14 +1,9 @@
-using CSharp.Fundamentals.Application.Services;
-using CSharp.Fundamentals.Domain.Repositories;
-using CSharp.Fundamentals.Infrastructure.Repositories;
+using CSharp.Fundamentals.Infrastructure;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
 builder.Services.AddSwaggerGen(
@@ -24,30 +19,11 @@ builder.Services.AddSwaggerGen(
 
 });
 
-builder.Services.AddSingleton<IProductRepository, JsonProductRepository>();
-builder.Services.AddSingleton<IInvestmentRepository, JsonInvestmentRepository>();
-builder.Services.AddSingleton<INumericDataRepository, JsonNumericDataRepository>();
-builder.Services.AddSingleton<IRelationalRepository, JsonRelationalRepository>();
-builder.Services.AddSingleton<IArithmeticRepository, JsonArithmeticRepository>();
-builder.Services.AddSingleton<ILogicalRepository, JsonLogicalRepository>();
-builder.Services.AddSingleton<ITernaryRepository, JsonTernaryRepository>();
 
-
-builder.Services.AddScoped<ProductService>();
-builder.Services.AddScoped<InvestmentService>();
-builder.Services.AddScoped<InvestmentCalculatorService>();
-builder.Services.AddScoped<NumericDataService>();
-builder.Services.AddScoped<NumericCalculatorService>();
-builder.Services.AddScoped<ArithmeticService>();
-builder.Services.AddScoped<RelationalService>();
-builder.Services.AddScoped<LogicalService>();
-builder.Services.AddScoped<TernaryService>();
-
-
+builder.Services.AddInfrastructure();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
