@@ -20,6 +20,7 @@ namespace CSharp.Fundamentals.Application.Services
         {
             var relationalOperation = new RelationalOperation(firstValue, secondValue);
             _repository.Add(relationalOperation);
+
             return _mapper.Map<RelationalOperationDto>(relationalOperation);
         }
 

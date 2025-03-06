@@ -13,6 +13,7 @@ namespace CSharp.Fundamentals.Application.Mappings
             CreateMap<LogicalOperation, LogicalOperationDto>();
             CreateMap<NumericData, NumericDataDto>();
             CreateMap<RelationalOperation, RelationalOperationDto>();
+            CreateMap<TernaryOperation, TernaryOperationsDto>();
         }
     }
 }
