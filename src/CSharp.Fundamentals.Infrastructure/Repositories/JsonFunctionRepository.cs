@@ -5,7 +5,7 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
 {
     public class JsonFunctionRepository : JsonRepository<Function>, IFunctionRepository
     {
-        public JsonFunctionRepository() : base("function.json") { }
+        public JsonFunctionRepository() : base("function") { }
 
         public Function? GetById(Guid id)
         {

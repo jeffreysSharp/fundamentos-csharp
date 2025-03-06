@@ -29,14 +29,14 @@ namespace CSharp.Fundamentals.Application.Services
             var investment = new Investment(investorName, type, amount, interestRate, durationInMonths);
             decimal earnings = _calculatorService.CalculateEarnings(investment);
 
-            _investmentRepository.AddInvestment(investment);
+            _investmentRepository.Add(investment);
             return _mapper.Map<InvestmentDto>(investment);
         }
        
 
         public IEnumerable<InvestmentDto> GetAllInvestments()
         {
-            var investments = _investmentRepository.GetAllInvestments();
+            var investments = _investmentRepository.GetAll();
 
             return _mapper.Map<IEnumerable<InvestmentDto>>(investments);
         }            
@@ -44,14 +44,14 @@ namespace CSharp.Fundamentals.Application.Services
 
         public InvestmentDto? GetInvestmentById(Guid id) 
         {        
-            var investment = _investmentRepository.GetInvestmentById(id);
+            var investment = _investmentRepository.GetById(id);
 
             return investment != null ? _mapper.Map<InvestmentDto>(investment) : null;
         } 
 
         public decimal GetInvestmentEarnings(Guid id)
         {
-            var investment = _investmentRepository.GetInvestmentById(id);
+            var investment = _investmentRepository.GetById(id);
             if (investment == null) return 0;
 
             return _calculatorService.CalculateEarnings(investment);

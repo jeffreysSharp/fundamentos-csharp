@@ -14,6 +14,8 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
             string basePath = Path.Combine(solutionDirectory, "fundamentos-csharp\\src\\CSharp.Fundamentals.Infrastructure", "Data");
             _filePath = Path.Combine(basePath, fileName);
 
+            _filePath = Path.Combine(basePath, $"{fileName.ToLower()}s.json");
+
             if (!Directory.Exists(basePath))
                 Directory.CreateDirectory(basePath);
 
