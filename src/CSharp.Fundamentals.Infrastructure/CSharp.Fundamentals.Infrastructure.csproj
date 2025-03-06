@@ -15,4 +15,8 @@
     <ProjectReference Include="..\CSharp.Fundamentals.Domain\CSharp.Fundamentals.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>

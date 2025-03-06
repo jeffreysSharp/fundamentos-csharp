@@ -1,20 +1,11 @@
 [
   {
-    "Id": "95c1e787-e5ae-43fa-9f55-e69fa9e1804e",
+    "Id": "60a46310-a7e7-417a-90ad-1295035f93db",
     "FirstCondition": true,
     "SecondCondition": true,
     "AndResult": true,
     "OrResult": true,
     "NotFirst": false,
     "NotSecond": false
-  },
-  {
-    "Id": "c01831ee-f6c6-4477-bdc9-cbb0c45f77ac",
-    "FirstCondition": false,
-    "SecondCondition": false,
-    "AndResult": false,
-    "OrResult": false,
-    "NotFirst": true,
-    "NotSecond": true
   }
 ]
