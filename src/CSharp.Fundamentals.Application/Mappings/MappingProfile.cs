@@ -10,6 +10,7 @@ namespace CSharp.Fundamentals.Application.Mappings
         {
             CreateMap<ArithmeticOperation, ArithmeticOperationDto>();
             CreateMap<Investment, InvestmentDto>();
+            CreateMap<LogicalOperation, LogicalOperationDto>();
         }
     }
 }
