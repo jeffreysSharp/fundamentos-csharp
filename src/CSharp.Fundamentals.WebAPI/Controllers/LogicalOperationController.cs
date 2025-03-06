@@ -6,11 +6,11 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class LogicalController : ControllerBase
+    public class LogicalOperationController : ControllerBase
     {
-        private readonly LogicalService _logicalService;
+        private readonly LogicalOperationService _logicalService;
 
-        public LogicalController(LogicalService logicalService)
+        public LogicalOperationController(LogicalOperationService logicalService)
         {
             _logicalService = logicalService;
         }

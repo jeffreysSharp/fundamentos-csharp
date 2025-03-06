@@ -4,16 +4,17 @@ using CSharp.Fundamentals.Domain.Repositories;
 
 namespace CSharp.Fundamentals.Infrastructure.Repositories
 {
-    public class JsonTernaryRepository : ITernaryRepository
+    public class JsonRelationalOperationRepository : IRelationalRepository
     {
         private readonly string _filePath;
-        private List<TernaryOperation> _operations;
+        private List<RelationalOperation> _operations;
 
-        public JsonTernaryRepository()
+        public JsonRelationalOperationRepository()
         {
             string solutionDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName ?? "";
+
             string basePath = Path.Combine(solutionDirectory, "fundamentos-csharp\\src\\CSharp.Fundamentals.Infrastructure", "Data");
-            _filePath = Path.Combine(basePath, "ternary_operations.json");
+            _filePath = Path.Combine(basePath, "relational_operation.json");
 
             if (!Directory.Exists(basePath))
                 Directory.CreateDirectory(basePath);
@@ -21,23 +22,23 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
             _operations = LoadFromFile();
         }
 
-        public void Add(TernaryOperation operation)
+        public void Add(RelationalOperation operation)
         {
             _operations.Add(operation);
             SaveToFile();
         }
 
-        public IEnumerable<TernaryOperation> GetAll() => _operations;
+        public IEnumerable<RelationalOperation> GetAll() => _operations;
 
-        public TernaryOperation? GetById(Guid id) => _operations.FirstOrDefault(o => o.Id == id);
+        public RelationalOperation? GetById(Guid id) => _operations.FirstOrDefault(o => o.Id == id);
 
-        private List<TernaryOperation> LoadFromFile()
+        private List<RelationalOperation> LoadFromFile()
         {
             if (!File.Exists(_filePath))
-                return new List<TernaryOperation>();
+                return new List<RelationalOperation>();
 
             var json = File.ReadAllText(_filePath);
-            return JsonSerializer.Deserialize<List<TernaryOperation>>(json) ?? new List<TernaryOperation>();
+            return JsonSerializer.Deserialize<List<RelationalOperation>>(json) ?? new List<RelationalOperation>();
         }
 
         private void SaveToFile()

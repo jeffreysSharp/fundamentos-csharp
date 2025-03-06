@@ -14,19 +14,19 @@ namespace CSharp.Fundamentals.Infrastructure
 
             services.AddSingleton<IInvestmentRepository, JsonInvestmentRepository>();
             services.AddSingleton<INumericDataRepository, JsonNumericDataRepository>();
-            services.AddSingleton<IRelationalRepository, JsonRelationalRepository>();
-            services.AddSingleton<ILogicalRepository, JsonLogicalRepository>();
-            services.AddSingleton<ITernaryRepository, JsonTernaryRepository>();
-            services.AddSingleton<IArithmeticRepository, JsonArithmeticRepository>();
+            services.AddSingleton<IRelationalRepository, JsonRelationalOperationRepository>();
+            services.AddSingleton<ILogicalRepository, JsonLogicalOperationRepository>();
+            services.AddSingleton<ITernaryRepository, JsonTernaryOperationRepository>();
+            services.AddSingleton<IArithmeticRepository, JsonArithmeticOperationRepository>();
 
             services.AddScoped<InvestmentService>();
             services.AddScoped<InvestmentCalculatorService>();
             services.AddScoped<NumericDataService>();
             services.AddScoped<NumericCalculatorService>();
-            services.AddScoped<ArithmeticService>();
+            services.AddScoped<ArithmeticOperationService>();
             services.AddScoped<RelationalOperationService>();
-            services.AddScoped<LogicalService>();
-            services.AddScoped<TernaryService>();
+            services.AddScoped<LogicalOperationService>();
+            services.AddScoped<TernaryOperationService>();
 
             return services;
         }

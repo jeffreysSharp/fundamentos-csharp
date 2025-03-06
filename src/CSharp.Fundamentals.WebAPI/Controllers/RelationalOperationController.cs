@@ -5,11 +5,11 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class RelationalController : ControllerBase
+    public class RelationalOperationController : ControllerBase
     {
         private readonly RelationalOperationService _relationalService;
 
-        public RelationalController(RelationalOperationService relationalService)
+        public RelationalOperationController(RelationalOperationService relationalService)
         {
             _relationalService = relationalService;
         }

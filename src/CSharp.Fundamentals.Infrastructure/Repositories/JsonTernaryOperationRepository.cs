@@ -4,16 +4,16 @@ using CSharp.Fundamentals.Domain.Repositories;
 
 namespace CSharp.Fundamentals.Infrastructure.Repositories
 {
-    public class JsonLogicalRepository : ILogicalRepository
+    public class JsonTernaryOperationRepository : ITernaryRepository
     {
         private readonly string _filePath;
-        private List<LogicalOperation> _operations;
+        private List<TernaryOperation> _operations;
 
-        public JsonLogicalRepository()
+        public JsonTernaryOperationRepository()
         {
             string solutionDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName ?? "";
             string basePath = Path.Combine(solutionDirectory, "fundamentos-csharp\\src\\CSharp.Fundamentals.Infrastructure", "Data");
-            _filePath = Path.Combine(basePath, "logical_operations.json");
+            _filePath = Path.Combine(basePath, "ternary_operation.json");
 
             if (!Directory.Exists(basePath))
                 Directory.CreateDirectory(basePath);
@@ -21,23 +21,23 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
             _operations = LoadFromFile();
         }
 
-        public void Add(LogicalOperation operation)
+        public void Add(TernaryOperation operation)
         {
             _operations.Add(operation);
             SaveToFile();
         }
 
-        public IEnumerable<LogicalOperation> GetAll() => _operations;
+        public IEnumerable<TernaryOperation> GetAll() => _operations;
 
-        public LogicalOperation? GetById(Guid id) => _operations.FirstOrDefault(o => o.Id == id);
+        public TernaryOperation? GetById(Guid id) => _operations.FirstOrDefault(o => o.Id == id);
 
-        private List<LogicalOperation> LoadFromFile()
+        private List<TernaryOperation> LoadFromFile()
         {
             if (!File.Exists(_filePath))
-                return new List<LogicalOperation>();
+                return new List<TernaryOperation>();
 
             var json = File.ReadAllText(_filePath);
-            return JsonSerializer.Deserialize<List<LogicalOperation>>(json) ?? new List<LogicalOperation>();
+            return JsonSerializer.Deserialize<List<TernaryOperation>>(json) ?? new List<TernaryOperation>();
         }
 
         private void SaveToFile()

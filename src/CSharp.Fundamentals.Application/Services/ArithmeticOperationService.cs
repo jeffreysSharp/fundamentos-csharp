@@ -5,12 +5,12 @@ using CSharp.Fundamentals.Domain.Repositories;
 
 namespace CSharp.Fundamentals.Application.Services
 {
-    public class ArithmeticService
+    public class ArithmeticOperationService
     {
         private readonly IArithmeticRepository _arithmeticRepository;
         private readonly IMapper _mapper;
 
-        public ArithmeticService(IArithmeticRepository repository, IMapper mapper)
+        public ArithmeticOperationService(IArithmeticRepository repository, IMapper mapper)
         {
             _arithmeticRepository = repository;
             _mapper = mapper;

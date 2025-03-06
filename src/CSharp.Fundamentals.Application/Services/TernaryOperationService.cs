@@ -5,37 +5,37 @@ using CSharp.Fundamentals.Domain.Repositories;
 
 namespace CSharp.Fundamentals.Application.Services
 {
-    public class TernaryService
+    public class TernaryOperationService
     {
         private readonly ITernaryRepository _repository;
         private readonly IMapper _mapper;
 
-        public TernaryService(ITernaryRepository repository, IMapper mapper)
+        public TernaryOperationService(ITernaryRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
         }
 
-        public TernaryOperationsDto EvaluateTernaryExpression(int value)
+        public TernaryOperationDto EvaluateTernaryExpression(int value)
         {
             var operation = new TernaryOperation(value);
 
             _repository.Add(operation);
-            return _mapper.Map<TernaryOperationsDto>(operation);
+            return _mapper.Map<TernaryOperationDto>(operation);
         }
 
-        public IEnumerable<TernaryOperationsDto> GetAllOperations()
+        public IEnumerable<TernaryOperationDto> GetAllOperations()
         {
             var ternaryOperations = _repository.GetAll();
 
-            return _mapper.Map<IEnumerable<TernaryOperationsDto>>(ternaryOperations);
+            return _mapper.Map<IEnumerable<TernaryOperationDto>>(ternaryOperations);
         }
 
-        public TernaryOperationsDto? GetOperationById(Guid id)
+        public TernaryOperationDto? GetOperationById(Guid id)
         {
             var ternaryOperation = _repository.GetById(id);
 
-            return _mapper.Map<TernaryOperationsDto>(ternaryOperation);
+            return _mapper.Map<TernaryOperationDto>(ternaryOperation);
         }
     }
 }

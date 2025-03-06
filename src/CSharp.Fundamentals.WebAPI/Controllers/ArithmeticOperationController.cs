@@ -5,11 +5,11 @@ namespace CSharp.Fundamentals.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ArithmeticController : ControllerBase
+    public class ArithmeticOperationController : ControllerBase
     {
-        private readonly ArithmeticService _arithmeticService;
+        private readonly ArithmeticOperationService _arithmeticService;
 
-        public ArithmeticController(ArithmeticService arithmeticService)
+        public ArithmeticOperationController(ArithmeticOperationService arithmeticService)
         {
             _arithmeticService = arithmeticService;
         }

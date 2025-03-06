@@ -4,17 +4,16 @@ using CSharp.Fundamentals.Domain.Repositories;
 
 namespace CSharp.Fundamentals.Infrastructure.Repositories
 {
-    public class JsonRelationalRepository : IRelationalRepository
+    public class JsonLogicalOperationRepository : ILogicalRepository
     {
         private readonly string _filePath;
-        private List<RelationalOperation> _operations;
+        private List<LogicalOperation> _operations;
 
-        public JsonRelationalRepository()
+        public JsonLogicalOperationRepository()
         {
             string solutionDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName ?? "";
-
             string basePath = Path.Combine(solutionDirectory, "fundamentos-csharp\\src\\CSharp.Fundamentals.Infrastructure", "Data");
-            _filePath = Path.Combine(basePath, "relational_operations.json");
+            _filePath = Path.Combine(basePath, "logical_operation.json");
 
             if (!Directory.Exists(basePath))
                 Directory.CreateDirectory(basePath);
@@ -22,23 +21,23 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
             _operations = LoadFromFile();
         }
 
-        public void Add(RelationalOperation operation)
+        public void Add(LogicalOperation operation)
         {
             _operations.Add(operation);
             SaveToFile();
         }
 
-        public IEnumerable<RelationalOperation> GetAll() => _operations;
+        public IEnumerable<LogicalOperation> GetAll() => _operations;
 
-        public RelationalOperation? GetById(Guid id) => _operations.FirstOrDefault(o => o.Id == id);
+        public LogicalOperation? GetById(Guid id) => _operations.FirstOrDefault(o => o.Id == id);
 
-        private List<RelationalOperation> LoadFromFile()
+        private List<LogicalOperation> LoadFromFile()
         {
             if (!File.Exists(_filePath))
-                return new List<RelationalOperation>();
+                return new List<LogicalOperation>();
 
             var json = File.ReadAllText(_filePath);
-            return JsonSerializer.Deserialize<List<RelationalOperation>>(json) ?? new List<RelationalOperation>();
+            return JsonSerializer.Deserialize<List<LogicalOperation>>(json) ?? new List<LogicalOperation>();
         }
 
         private void SaveToFile()

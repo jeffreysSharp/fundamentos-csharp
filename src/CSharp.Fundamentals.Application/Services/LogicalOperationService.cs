@@ -5,12 +5,12 @@ using CSharp.Fundamentals.Domain.Repositories;
 
 namespace CSharp.Fundamentals.Application.Services
 {
-    public class LogicalService
+    public class LogicalOperationService
     {
         private readonly ILogicalRepository _repository;
         private readonly IMapper _mapper;
 
-        public LogicalService(ILogicalRepository repository, 
+        public LogicalOperationService(ILogicalRepository repository, 
                               IMapper mapper)
         {
             _repository = repository;

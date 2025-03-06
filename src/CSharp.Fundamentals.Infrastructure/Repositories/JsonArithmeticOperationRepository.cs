@@ -4,17 +4,17 @@ using CSharp.Fundamentals.Domain.Repositories;
 
 namespace CSharp.Fundamentals.Infrastructure.Repositories
 {
-    public class JsonArithmeticRepository : IArithmeticRepository
+    public class JsonArithmeticOperationRepository : IArithmeticRepository
     {
         private readonly string _filePath;
         private List<ArithmeticOperation> _operations;
 
-        public JsonArithmeticRepository()
+        public JsonArithmeticOperationRepository()
         {
             string solutionDirectory = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName ?? "";
 
             string basePath = Path.Combine(solutionDirectory, "fundamentos-csharp\\src\\CSharp.Fundamentals.Infrastructure", "Data");
-            _filePath = Path.Combine(basePath, "arithmetic_operations.json");
+            _filePath = Path.Combine(basePath, "arithmetic_operation.json");
 
             if (!Directory.Exists(basePath))
                 Directory.CreateDirectory(basePath);

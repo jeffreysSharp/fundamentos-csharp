@@ -1,16 +1,15 @@
 ﻿using CSharp.Fundamentals.Application.Services;
-using CSharp.Fundamentals.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CSharp.Fundamentals.WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class TernaryController : ControllerBase
+    public class TernaryOperationController : ControllerBase
     {
-        private readonly TernaryService _ternaryService;
+        private readonly TernaryOperationService _ternaryService;
 
-        public TernaryController(TernaryService ternaryService)
+        public TernaryOperationController(TernaryOperationService ternaryService)
         {
             _ternaryService = ternaryService;
         }

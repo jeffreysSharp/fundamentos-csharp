@@ -1,6 +1,6 @@
 ﻿namespace CSharp.Fundamentals.Application.DTOs
 {
-    public class TernaryOperationsDto
+    public class TernaryOperationDto
     {
         public Guid Id { get; set; }
         public int Value { get; set; }

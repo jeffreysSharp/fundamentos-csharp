@@ -1,0 +1,11 @@
+[
+  {
+    "Id": "18806a31-68c1-48b5-b7eb-91239ed38315",
+    "FirstCondition": true,
+    "SecondCondition": false,
+    "AndResult": false,
+    "OrResult": true,
+    "NotFirst": false,
+    "NotSecond": true
+  }
+]
