@@ -7,10 +7,10 @@ namespace CSharp.Fundamentals.Application.Services
 {
     public class RelationalOperationService
     {
-        private readonly IRelationalRepository _repository;
+        private readonly IRelationalOperationRepository _repository;
         private readonly IMapper _mapper;
 
-        public RelationalOperationService(IRelationalRepository repository, IMapper mapper)
+        public RelationalOperationService(IRelationalOperationRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
