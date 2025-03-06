@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using CSharp.Fundamentals.Application.DTOs;
 using CSharp.Fundamentals.Domain.Entities;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CSharp.Fundamentals.Application.Mappings
 {
@@ -10,6 +9,7 @@ namespace CSharp.Fundamentals.Application.Mappings
         public MappingProfile()
         {
             CreateMap<ArithmeticOperation, ArithmeticOperationDto>();
+            CreateMap<Investment, InvestmentDto>();
         }
     }
 }
