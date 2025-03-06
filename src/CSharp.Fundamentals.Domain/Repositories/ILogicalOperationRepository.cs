@@ -2,7 +2,7 @@
 
 namespace CSharp.Fundamentals.Domain.Repositories
 {
-    public interface ILogicalRepository
+    public interface ILogicalOperationRepository
     {
         void Add(LogicalOperation operation);
         IEnumerable<LogicalOperation> GetAll();

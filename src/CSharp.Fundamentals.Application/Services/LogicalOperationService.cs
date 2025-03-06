@@ -7,10 +7,10 @@ namespace CSharp.Fundamentals.Application.Services
 {
     public class LogicalOperationService
     {
-        private readonly ILogicalRepository _repository;
+        private readonly ILogicalOperationRepository _repository;
         private readonly IMapper _mapper;
 
-        public LogicalOperationService(ILogicalRepository repository, 
+        public LogicalOperationService(ILogicalOperationRepository repository, 
                               IMapper mapper)
         {
             _repository = repository;
