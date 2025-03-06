@@ -189,7 +189,7 @@ if (x = 10) // ERRO! `=` não pode ser usado para comparação
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-   <a href="arithmetic-operators.md">Voltar: Documentação Completa sobre Operadores Aritméticos no C#</a><br />
+   <a href="arithmetic-operator.md">Voltar: Documentação Completa sobre Operadores Aritméticos no C#</a><br />
    <a href="logic-operator.md">Avançar: Documentação Completa sobre Operadores Lógicos no C#</a>  
 </div>
 
