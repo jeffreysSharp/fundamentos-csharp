@@ -12,6 +12,7 @@ namespace CSharp.Fundamentals.Application.Mappings
             CreateMap<Investment, InvestmentDto>();
             CreateMap<LogicalOperation, LogicalOperationDto>();
             CreateMap<NumericData, NumericDataDto>();
+            CreateMap<RelationalOperation, RelationalOperationDto>();
         }
     }
 }

@@ -24,7 +24,7 @@ namespace CSharp.Fundamentals.Infrastructure
             services.AddScoped<NumericDataService>();
             services.AddScoped<NumericCalculatorService>();
             services.AddScoped<ArithmeticService>();
-            services.AddScoped<RelationalService>();
+            services.AddScoped<RelationalOperationService>();
             services.AddScoped<LogicalService>();
             services.AddScoped<TernaryService>();
 
