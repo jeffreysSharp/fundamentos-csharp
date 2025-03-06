@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSharp.Fundamentals.Application\CSharp.Fundamentals.Application.csproj" />
     <ProjectReference Include="..\CSharp.Fundamentals.Domain\CSharp.Fundamentals.Domain.csproj" />
   </ItemGroup>
 
