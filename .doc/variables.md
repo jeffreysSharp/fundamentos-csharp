@@ -179,5 +179,5 @@ Apresentar("Lucas", 25);
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="data-types.md">Voltar: Documentação Completa dos Principais Tipos de Dados no C#</a><br />
-  <a href="arithmetic-operators.md">Avançar: Documentação Completa sobre Operadores Aritméticos no C#</a>
+  <a href="arithmetic-operator.md">Avançar: Documentação Completa sobre Operadores Aritméticos no C#</a>
 </div>

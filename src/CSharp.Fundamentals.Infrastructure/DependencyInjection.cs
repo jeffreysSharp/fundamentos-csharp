@@ -13,20 +13,22 @@ namespace CSharp.Fundamentals.Infrastructure
             services.AddAutoMapper(typeof(MappingProfile));
 
             services.AddSingleton<IInvestmentRepository, JsonInvestmentRepository>();
-            services.AddSingleton<INumericDataRepository, JsonNumericDataRepository>();
-            services.AddSingleton<IRelationalRepository, JsonRelationalRepository>();
-            services.AddSingleton<ILogicalRepository, JsonLogicalRepository>();
-            services.AddSingleton<ITernaryRepository, JsonTernaryRepository>();
-            services.AddSingleton<IArithmeticRepository, JsonArithmeticRepository>();
+            services.AddSingleton<INumericalDataRepository, JsonNumericalDataRepository>();
+            services.AddSingleton<IRelationalOperationRepository, JsonRelationalOperationRepository>();
+            services.AddSingleton<ILogicalOperationRepository, JsonLogicalOperationRepository>();
+            services.AddSingleton<ITernaryOperationRepository, JsonTernaryOperationRepository>();
+            services.AddSingleton<IArithmeticRepository, JsonArithmeticOperationRepository>();
+            services.AddSingleton<IFunctionRepository, JsonFunctionRepository>();
 
             services.AddScoped<InvestmentService>();
             services.AddScoped<InvestmentCalculatorService>();
-            services.AddScoped<NumericDataService>();
+            services.AddScoped<NumericalDataService>();
             services.AddScoped<NumericCalculatorService>();
-            services.AddScoped<ArithmeticService>();
+            services.AddScoped<ArithmeticOperationService>();
             services.AddScoped<RelationalOperationService>();
-            services.AddScoped<LogicalService>();
-            services.AddScoped<TernaryService>();
+            services.AddScoped<LogicalOperationService>();
+            services.AddScoped<TernaryOperationService>();
+            services.AddScoped<FunctionService>();
 
             return services;
         }

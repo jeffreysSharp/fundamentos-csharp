@@ -4,8 +4,8 @@ namespace CSharp.Fundamentals.Domain.Repositories
 {
     public interface IInvestmentRepository
     {
-        void AddInvestment(Investment investment);
-        IEnumerable<Investment> GetAllInvestments();
-        Investment GetInvestmentById(Guid id);
+        void Add(Investment investment);
+        IEnumerable<Investment> GetAll();
+        Investment GetById(Guid id);
     }
 }

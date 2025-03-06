@@ -8,12 +8,13 @@ namespace CSharp.Fundamentals.Application.Mappings
     {
         public MappingProfile()
         {
-            CreateMap<ArithmeticOperation, ArithmeticOperationDto>();
-            CreateMap<Investment, InvestmentDto>();
-            CreateMap<LogicalOperation, LogicalOperationDto>();
-            CreateMap<NumericData, NumericDataDto>();
-            CreateMap<RelationalOperation, RelationalOperationDto>();
-            CreateMap<TernaryOperation, TernaryOperationsDto>();
+            CreateMap<ArithmeticOperation, ArithmeticOperationDto>().ReverseMap();
+            CreateMap<Investment, InvestmentDto>().ReverseMap();
+            CreateMap<LogicalOperation, LogicalOperationDto>().ReverseMap();
+            CreateMap<NumericalData, NumericalDataDto>().ReverseMap();
+            CreateMap<RelationalOperation, RelationalOperationDto>().ReverseMap();
+            CreateMap<TernaryOperation, TernaryOperationDto>().ReverseMap();
+            CreateMap<Function, FunctionDto>().ReverseMap();
         }
     }
 }

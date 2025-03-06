@@ -3,11 +3,11 @@ using CSharp.Fundamentals.Domain.Repositories;
 
 namespace CSharp.Fundamentals.Infrastructure.Repositories
 {
-    public class JsonInvestmentRepository : JsonRepository<Investment>, IInvestmentRepository
+    public class JsonFunctionRepository : JsonRepository<Function>, IFunctionRepository
     {
-        public JsonInvestmentRepository() : base("investment") { }
+        public JsonFunctionRepository() : base("function") { }
 
-        public Investment? GetById(Guid id)
+        public Function? GetById(Guid id)
         {
             return GetById(operation => operation.Id == id);
         }

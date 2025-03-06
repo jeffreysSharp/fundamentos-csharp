@@ -2,7 +2,7 @@
 
 namespace CSharp.Fundamentals.Domain.Repositories
 {
-    public interface IArithmeticRepository
+    public interface IArithmeticRepository : IJsonRepository<ArithmeticOperation>
     {
         void Add(ArithmeticOperation operation);
         IEnumerable<ArithmeticOperation> GetAll();
