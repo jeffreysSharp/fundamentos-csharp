@@ -325,7 +325,7 @@ Gerando automaticamente uma lista gigante de investors para futuros testes de ca
 Array,List, Stack, Queue, Dictionary<TKey, TValue>, IEnumerable, ICollection,IList, IReadOnlyCollection, IReadOnlyList,     IDictionary<TKey, TValue>
 
 
-Conforme a nossa documentação
+Conforme a nossa documentação de DataStruct
 
 
 
