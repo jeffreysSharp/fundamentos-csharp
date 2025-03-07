@@ -2,7 +2,7 @@
 
 As estruturas de dados são fundamentais para a organização, armazenamento e manipulação eficiente de dados em qualquer aplicação. No .NET (C#), há diversas estruturas disponíveis, desde arrays e listas até filas, pilhas e dicionários, cada uma com características e usos específicos.
 
-1️⃣ O que são Estruturas de Dados?<br />
+1️⃣ **O que são Estruturas de Dados?**<br />
 Uma estrutura de dados é uma maneira organizada de armazenar e gerenciar informações, permitindo acessar e modificar os dados de forma eficiente.<br />
 
 📌 **Classificação das Estruturas de Dados**<br />
@@ -137,12 +137,6 @@ List<T> → Quando precisa de crescimento dinâmico e acesso rápido por índice
 Stack<T> → Quando a ordem de processamento segue o conceito LIFO (Ex: histórico de navegação).<br />
 Queue<T> → Quando a ordem segue o conceito FIFO (Ex: filas de processamento).<br />
 Dictionary<TKey, TValue> → Quando precisa de busca rápida por chave única.<br />
-
-5️⃣ **Conclusão**<br />
-🚀 Agora você tem um guia completo sobre Estruturas de Dados em C#!<br />
-✅ Entendeu o conceito e a aplicação de cada estrutura.<br />
-✅ Viu exemplos práticos com código funcional.<br />
-✅ Sabe escolher a melhor estrutura para cada situação.<br />
 
 ## **Interfaces de Coleções no .NET (C#)** <br />
 Além das estruturas básicas como Array, List, Stack, Queue e Dictionary, o .NET fornece interfaces genéricas e não genéricas para manipulação de coleções de forma mais flexível e abstrata.<br />
@@ -311,6 +305,11 @@ Console.WriteLine(ageDictionary["Alice"]); // Saída: 25
 ✅ IReadOnlyCollection<T> e IReadOnlyList<T> são versões somente leitura.<br />
 ✅ IDictionary<TKey, TValue> permite acesso rápido via chave.<br />
 
+### **Conclusão**<br />
+🚀 Agora você tem um guia completo sobre Estruturas de Dados em C#!<br />
+✅ Entendeu o conceito e a aplicação de cada estrutura.<br />
+✅ Viu exemplos práticos com código funcional.<br />
+✅ Sabe escolher a melhor estrutura para cada situação.<br />
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
