@@ -29,6 +29,7 @@ Agora, vamos explorar cada uma dessas estruturas em detalhes! 🚀<br />
 As estruturas if, else if e else permitem executar diferentes blocos de código conforme uma condição booleana.<br />
 
 ´´´
+
 int idade = 20;
 
 if (idade >= 18)
@@ -50,6 +51,7 @@ else
 📌 **Exemplo de uso:** <br />
 
 ```
+
 char nota = 'B';
 
 switch (nota)
@@ -73,6 +75,7 @@ switch (nota)
 📌 **Switch Expression (C# 8+)**
 
 ´´´
+
 string mensagem = nota switch
 {
     'A' => "Excelente!",
@@ -116,6 +119,7 @@ for (int i = 0; i < 5; i++)
 📌 **Exemplo de uso:**
 
 ```
+
 string[] frutas = { "🍎 Maçã", "🍌 Banana", "🍊 Laranja" };
 
 foreach (var fruta in frutas)
@@ -181,6 +185,7 @@ for (int i = 0; i < 10; i++)
 📌 **Exemplo de try-catch-finally:**<br />
 
 ```
+
 try
 {
     int divisor = 0;
@@ -194,6 +199,7 @@ finally
 {
     Console.WriteLine("✅ Execução finalizada.");
 }
+
 ```
 
 🎯 **Conclusão**
