@@ -34,6 +34,7 @@ Essa aplicação de exemplo tem a seguinte estrutura:<br />
 6. <a href=".doc/logic-operator.md">Documentação Completa sobre Operadores Lógicos no C#</a>
 7. <a href=".doc/ternary-operato.md">Documentação Completa sobre o Operador Ternário (?:) no C#</a>
 8. <a href=".doc/functions.md">Documentação Completa sobre Funções no .NET (C#)</a>
+8. <a href=".doc/data-structure.md">Documentação Completa sobre Estruturas de Dados em C#</a>
 
 
 
