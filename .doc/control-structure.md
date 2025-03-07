@@ -112,7 +112,7 @@ Os loops permitem executar um bloco de código repetidamente enquanto uma condi�
 
 for (int i = 0; i < 5; i++)
 {
-    Console.WriteLine($"🔄 Iteração {i}");
+    Console.WriteLine($"Iteração {i}");
 }
 
 ````
@@ -123,7 +123,7 @@ for (int i = 0; i < 5; i++)
 
 ```
 
-string[] frutas = { "🍎 Maçã", "🍌 Banana", "🍊 Laranja" };
+string[] frutas = { "Maçã", "Banana", "Laranja" };
 
 foreach (var fruta in frutas)
 {
@@ -178,7 +178,7 @@ do
 for (int i = 0; i < 10; i++)
 {
     if (i == 5) break; // Sai do loop
-    if (i % 2 == 0) continue; // ⏭️ Pula números pares
+    if (i % 2 == 0) continue; // Pula números pares
     Console.WriteLine(i);
 }
 
@@ -197,18 +197,18 @@ try
 }
 catch (DivideByZeroException ex)
 {
-    Console.WriteLine($"⚠️ Erro: {ex.Message}");
+    Console.WriteLine($"Erro: {ex.Message}");
 }
 finally
 {
-    Console.WriteLine("✅ Execução finalizada.");
+    Console.WriteLine("Execução finalizada.");
 }
 
 ```
 
 🎯 **Conclusão**
 
-🚀 Agora você tem um guia completo sobre Estruturas de Controle no .NET C#!<br />
+🚀 Agora você tem um guia completo sobre Estruturas de Controle no C#!<br />
 ✅ Aprendeu como funcionam as estruturas condicionais.<br />
 ✅ Viu como utilizar loops e controle de fluxo corretamente.<br />
 ✅ Entendeu a importância do tratamento de exceções.<br />
