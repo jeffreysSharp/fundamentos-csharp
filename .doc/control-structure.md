@@ -16,10 +16,10 @@ No C#, existem diversas estruturas de controle, classificadas em:<br/>
 
 As estruturas de controle definem o caminho que o código seguirá com base em condições, repetições ou manipulação do fluxo.<br />
 
-✅ Condicionais controlam decisões lógicas no código.<br />
-✅ Loops repetem instruções enquanto a condição for verdadeira.<br />
-✅ Fluxo de execução permite interromper ou redirecionar o código.<br />
-✅ Tratamento de erros evita falhas inesperadas no sistema.<br />
+✅ **Condicionais:** controlam decisões lógicas no código.<br />
+✅ **Loops:** repetem instruções enquanto a condição for verdadeira.<br />
+✅ **Fluxo de execução:** permite interromper ou redirecionar o código.<br />
+✅ **Tratamento de erros:** evita falhas inesperadas no sistema.<br />
 
 Agora, vamos explorar cada uma dessas estruturas em detalhes! 🚀<br />
 
@@ -28,7 +28,8 @@ Agora, vamos explorar cada uma dessas estruturas em detalhes! 🚀<br />
 🔹 **1. if, else if, else**<br />
 As estruturas if, else if e else permitem executar diferentes blocos de código conforme uma condição booleana.<br />
 
-´´´
+```
+
 
 int idade = 20;
 
@@ -45,7 +46,8 @@ else
     Console.WriteLine("Menor de idade.");
 }
 
-´´´
+```
+
 
 🔹 **2. switch**<br />
 📌 **Exemplo de uso:** <br />
@@ -74,7 +76,7 @@ switch (nota)
 
 📌 **Switch Expression (C# 8+)**
 
-´´´
+```
 
 string mensagem = nota switch
 {
@@ -86,7 +88,8 @@ string mensagem = nota switch
 
 Console.WriteLine(mensagem);
 
-´´´
+```
+
 
 3️⃣ **Laços de Repetição (Loops)** <br />
 
@@ -147,6 +150,7 @@ while (contador < 3)
 🔹 **4. do-while**<br />
 
 📌 **Exemplo de uso:**<br />
+
 ````
 
 int numero;
