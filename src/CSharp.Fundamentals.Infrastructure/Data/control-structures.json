@@ -1,0 +1,40 @@
+[
+  {
+    "Id": "8107978b-5e3d-4485-8418-b7c6581ea6bb",
+    "InputValue": 10,
+    "IfElseResult": "Positivo",
+    "SwitchResult": "Valor positivo",
+    "LoopResults": [
+      "Itera\u00E7\u00E3o 1",
+      "Itera\u00E7\u00E3o 2",
+      "Itera\u00E7\u00E3o 3",
+      "Itera\u00E7\u00E3o 4",
+      "Itera\u00E7\u00E3o 5",
+      "Itera\u00E7\u00E3o 6",
+      "Itera\u00E7\u00E3o 7",
+      "Itera\u00E7\u00E3o 8",
+      "Itera\u00E7\u00E3o 9",
+      "Itera\u00E7\u00E3o 10"
+    ]
+  },
+  {
+    "Id": "4e880bbe-9a2b-46d7-acd9-a2a81e1004ea",
+    "InputValue": 3,
+    "IfElseResult": "Positivo",
+    "SwitchResult": "Valor positivo",
+    "LoopResults": [
+      "Itera\u00E7\u00E3o 1",
+      "Itera\u00E7\u00E3o 2",
+      "Itera\u00E7\u00E3o 3"
+    ]
+  },
+  {
+    "Id": "97075b29-2b17-40df-b9e6-669aa2212ef8",
+    "InputValue": 1,
+    "IfElseResult": "Positivo",
+    "SwitchResult": "Valor positivo",
+    "LoopResults": [
+      "Itera\u00E7\u00E3o 1"
+    ]
+  }
+]
