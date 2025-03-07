@@ -1,4 +1,4 @@
-## Documentação Completa sobre Funções no .NET (C#)
+## Documentação Completa sobre Funções no (C#)
 
 As **funções** são um dos principais conceitos da programação em C#, permitindo **modularizar o código**, **reutilizar lógica e melhorar a organização do projeto**. No .NET, funções são métodos definidos dentro de classes, podendo ser chamados e reutilizados de diferentes maneiras.
 
@@ -209,7 +209,7 @@ Console.WriteLine(resultado); // Saída: Número aleatório
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="ternary-operator.md">Voltar: Documentação Completa sobre o Operador Ternário (?:) no C#</a><br /> 
-     <a href="data-structure.md">Avançar: Documentação Completa sobre Estruturas de Dados em C#</a>   
+     <a href="data-structure.md">Avançar: Documentação Completa sobre Estruturas de Dados no C#</a>   
 </div>
 
 

@@ -1,4 +1,4 @@
-## Documentação Completa sobre Estruturas de Dados em C#
+## Documentação Completa sobre Estruturas de Dados no C#
 
 As estruturas de dados são fundamentais para a organização, armazenamento e manipulação eficiente de dados em qualquer aplicação. No .NET (C#), há diversas estruturas disponíveis, desde arrays e listas até filas, pilhas e dicionários, cada uma com características e usos específicos.
 
@@ -314,7 +314,7 @@ Console.WriteLine(ageDictionary["Alice"]); // Saída: 25
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="functions.md">Voltar: Documentação Completa sobre Funções no .NET C#</a><br />
-   <a href="control-structure.md">Avançar: Documentação Completa sobre Estruturas de Controle no .NET C#</a>  
+   <a href="control-structure.md">Avançar: Documentação Completa sobre Estruturas de Controle no C#</a>  
 </div>
 
 

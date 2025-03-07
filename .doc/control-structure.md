@@ -1,4 +1,4 @@
-## Documentação Completa sobre Estruturas de Controle no .NET C#
+## Documentação Completa sobre Estruturas de Controle no C#
 
 As estruturas de controle são essenciais para definir o fluxo de execução de um programa, permitindo tomada de decisões, repetição de ações e manipulação do fluxo da aplicação.
 
@@ -207,7 +207,7 @@ finally
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-   <a href="data-structure.md">Voltar: Documentação Completa sobre Estruturas de Dados em C#</a>  
+   <a href="data-structure.md">Voltar: Documentação Completa sobre Estruturas de Dados no C#</a>  
 </div>
 
 
