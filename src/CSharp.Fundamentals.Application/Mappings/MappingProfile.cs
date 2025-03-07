@@ -14,6 +14,7 @@ namespace CSharp.Fundamentals.Application.Mappings
             CreateMap<NumericalData, NumericalDataDto>().ReverseMap();
             CreateMap<RelationalOperation, RelationalOperationDto>().ReverseMap();
             CreateMap<TernaryOperation, TernaryOperationDto>().ReverseMap();
+            CreateMap<Investor, InvestorDto>().ReverseMap();
             CreateMap<Function, FunctionDto>().ReverseMap();
         }
     }

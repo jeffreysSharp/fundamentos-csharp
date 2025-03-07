@@ -1,16 +1,16 @@
 [
   {
-    "Id": "b56f17c3-0842-4042-9fc3-fd5d25d2295e",
+    "Id": "315ad89a-e473-4b73-9a05-dc573b0cc395",
     "FirstNumber": 10,
-    "SecondNumber": 3,
-    "Sum": 13,
-    "Subtraction": 7,
-    "Multiplication": 30,
-    "Division": 3.3333333333333335,
-    "Modulo": 1,
+    "SecondNumber": 30,
+    "Sum": 40,
+    "Subtraction": -20,
+    "Multiplication": 300,
+    "Division": 0.3333333333333333,
+    "Modulo": 10,
     "IncrementFirst": 11,
-    "IncrementSecond": 4,
+    "IncrementSecond": 31,
     "DecrementFirst": 9,
-    "DecrementSecond": 2
+    "DecrementSecond": 29
   }
 ]

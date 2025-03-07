@@ -6,7 +6,7 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
     public class JsonRepository<T> : IJsonRepository<T> where T : class
     {
         private readonly string _filePath;
-        private List<T> _entities;
+        public List<T> _entities;
 
         public JsonRepository(string fileName)
         {
@@ -41,7 +41,7 @@ namespace CSharp.Fundamentals.Infrastructure.Repositories
             return JsonSerializer.Deserialize<List<T>>(json) ?? new List<T>();
         }
 
-        private void SaveToFile()
+        public void SaveToFile()
         {
             var json = JsonSerializer.Serialize(_entities, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(_filePath, json);
