@@ -1,13 +1,13 @@
 [
   {
-    "Id": "fbfdca5c-b6df-4ae9-b092-e225fe5ad302",
+    "Id": "a41834c5-b0b5-4c17-9123-ee69403dd31f",
     "FirstValue": 10,
-    "SecondValue": 30,
-    "IsEqual": false,
-    "IsNotEqual": true,
+    "SecondValue": 10,
+    "IsEqual": true,
+    "IsNotEqual": false,
     "IsGreaterThan": false,
-    "IsLessThan": true,
-    "IsGreaterOrEqual": false,
+    "IsLessThan": false,
+    "IsGreaterOrEqual": true,
     "IsLessOrEqual": true
   }
 ]

@@ -208,7 +208,8 @@ Console.WriteLine(resultado); // Saída: Número aleatório
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-   <a href="ternary-operator.md">Voltar: Documentação Completa sobre o Operador Ternário (?:) no C#</a>  
+   <a href="ternary-operator.md">Voltar: Documentação Completa sobre o Operador Ternário (?:) no C#</a><br /> 
+     <a href="data-structure.md">Avançar: Documentação Completa sobre Estruturas de Dados em C#</a>   
 </div>
 
 
