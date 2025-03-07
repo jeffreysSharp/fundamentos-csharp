@@ -313,7 +313,8 @@ Console.WriteLine(ageDictionary["Alice"]); // Saída: 25
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-   <a href="functions.md">Voltar: Documentação Completa sobre Funções no .NET (C#)</a>  
+   <a href="functions.md">Voltar: Documentação Completa sobre Funções no .NET C#</a><br />
+   <a href="control-structure.md">Avançar: Documentação Completa sobre Estruturas de Controle no .NET C#</a>  
 </div>
 
 
