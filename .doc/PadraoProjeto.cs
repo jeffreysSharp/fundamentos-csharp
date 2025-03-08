@@ -1,6 +1,3 @@
-Vamos recomeçar ?
-Vou te passar todo o ultimo código para você se lembrar 
-
 /////////////////////////////////////////////////////////////////////////////////////
 // CSharp.Fundamentals - Solution
 
@@ -308,24 +305,7 @@ app.Run();
 
 
 /////////////////////////////////////////////////////////////////
-Baseado nesse template preciso que crie um CRUD de investors com os seguintes dados:
-
-    {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
-        public InvestmentType Type { get; set; }
-        public decimal Amount { get; set; }
-        public double InterestRate { get; set; }
-        public int DurationInMonths { get; set; }
-        public DateTime StartDate { get; set; }
-    }
-
-Gerando automaticamente uma lista gigante de investors para futuros testes de carga e utilizando todos os tipos de dados do c#:
-
-Array,List, Stack, Queue, Dictionary<TKey, TValue>, IEnumerable, ICollection,IList, IReadOnlyCollection, IReadOnlyList,     IDictionary<TKey, TValue>
-
-
-Conforme a nossa documentação de DataStruct
+// Baseado nesse template preciso que crie um CRUD implementado todas as Estruturas de dados 
 
 
 
