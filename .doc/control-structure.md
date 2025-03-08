@@ -217,7 +217,8 @@ finally
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-   <a href="data-structure.md">Voltar: Documentação Completa sobre Estruturas de Dados no C#</a>  
+   <a href="data-structure.md">Voltar: Documentação Completa sobre Estruturas de Dados no C#</a><br />
+   <a href="oop.md">Avançar: Documentação Completa sobre Programação Orientada a Objetos (POO)</a>    
 </div>
 
 

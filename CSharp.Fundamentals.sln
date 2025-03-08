@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Fundamentals.Infrast
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Fundamentals.WebAPI", "src\CSharp.Fundamentals.WebAPI\CSharp.Fundamentals.WebAPI.csproj", "{2F07C888-7AD1-43B1-92C2-2877EAA73CAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Fundamentals.POO", "src\CSharp.Fundamentals.POO\CSharp.Fundamentals.POO.csproj", "{97E748BF-4B39-4DE9-9FBE-8BC0211E1A77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{2F07C888-7AD1-43B1-92C2-2877EAA73CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F07C888-7AD1-43B1-92C2-2877EAA73CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F07C888-7AD1-43B1-92C2-2877EAA73CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97E748BF-4B39-4DE9-9FBE-8BC0211E1A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E748BF-4B39-4DE9-9FBE-8BC0211E1A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E748BF-4B39-4DE9-9FBE-8BC0211E1A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E748BF-4B39-4DE9-9FBE-8BC0211E1A77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{23DB771F-CD1C-4534-A7A8-399D64F8CA0C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{85C6CA46-142A-425E-9235-F8A1A4593759} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{2F07C888-7AD1-43B1-92C2-2877EAA73CAF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{97E748BF-4B39-4DE9-9FBE-8BC0211E1A77} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1094BE77-CE78-4117-88A8-7E569F5C27F0}
